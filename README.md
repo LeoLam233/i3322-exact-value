@@ -26,6 +26,7 @@ Its exact width is `4.60932356071910243385112719549938850842E-52`. “Exact” r
 4. [Reproduce the checks](REPRODUCE.md).
 5. [Authority and provenance](PROVENANCE.md).
 6. [Project history and changing evidence status](docs/PROJECT_HISTORY.md).
+7. [Human and AI contributions and responsibility](CONTRIBUTORS.md).
 
 ## Verify the candidate
 
