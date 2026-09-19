@@ -1,0 +1,364 @@
+{
+  "status": "PASS",
+  "scope": "Fresh offline public-finalization execution; build/replay/custody checks do not upgrade mathematical verdicts or constitute external human review.",
+  "input_sha256": "c85cca86fa8c3c87de0cab88eec5ec537817d716898760b35a7bff9f4aa46512",
+  "input_manifest_entries": 7,
+  "input_manifest_status": "PASS",
+  "paper_version": "v0.1.2",
+  "paper_identity": {
+    "zip_sha256": "1aa58a1d74f1aa130024196f4f537fcab293e7d78bab073d8432077348ee9905",
+    "pdf_sha256": "81b75cd3a720ab0e2953bdbd79f70c969af5fc48ab01caa75f4522b229f51f2f",
+    "package_manifest_entries": 90,
+    "pdf_bytes": 711368,
+    "zip_bytes": 46696756
+  },
+  "mathematical_content_changed": false,
+  "frozen_certificate_algorithms_changed": false,
+  "full_frozen_replay": {
+    "input_sha256": "73991d0bf7417de9586fbaf4f864900562f67f535732caa10299b374c7b3aa10",
+    "manuscript_inventory_files": 90,
+    "mode": "full",
+    "commands": [
+      {
+        "name": "integration",
+        "exit_code": 0,
+        "elapsed_seconds": 0.9219999999913853,
+        "log_sha256": "8ee80f5766a6a8f0abd3c5d4139a56429b2f63912a137e7ac78bfddbf36fdfa7"
+      },
+      {
+        "name": "integration_mutations",
+        "exit_code": 0,
+        "elapsed_seconds": 0.4220000000059372,
+        "log_sha256": "4863d8e9c6a54ace10ad3e72e4fe3284ef086a083bd041d8a787e69e35216bbc"
+      },
+      {
+        "name": "r0",
+        "exit_code": 0,
+        "elapsed_seconds": 0.5939999999973224,
+        "log_sha256": "4b3a0cb3496e40e0d433a157dd1b308a05e8bd4f131197239fe650e06474f5e1"
+      },
+      {
+        "name": "r1",
+        "exit_code": 0,
+        "elapsed_seconds": 4.297000000005937,
+        "log_sha256": "ca50c2ef3d6715dd72461eb47193784385f665ec511356fafc04323b1fb10b40"
+      },
+      {
+        "name": "o1_o5",
+        "exit_code": 0,
+        "elapsed_seconds": 13.139999999999418,
+        "log_sha256": "96373dedabace17166c3b305411fa301e8b9e04e6db6ebc1fe5ba2110c15fe58"
+      },
+      {
+        "name": "o6",
+        "exit_code": 0,
+        "elapsed_seconds": 598.8600000000006,
+        "log_sha256": "b4ab14b85511f668da284c529c746dbd82fe95c35cb9233f857c33361505d5b6"
+      }
+    ],
+    "software_proof_assistant": false,
+    "historical_full_arithmetic_observer_rerun": false,
+    "o6_certificate_comparisons": {
+      "central_monotonicity.json": true,
+      "custody.json": true,
+      "existence.json": true,
+      "full_cover.json": true,
+      "hostile_audit.json": true,
+      "local_manifold.json": true,
+      "local_manifold_refined.json": true,
+      "parameter_uniqueness.json": true,
+      "phase_geometry.json": true,
+      "root.json": true,
+      "scalar.json": true,
+      "symbolic.json": true
+    },
+    "status": "PASS"
+  },
+  "full_replay_runtime": {
+    "python": "3.12.14",
+    "platform": "Windows",
+    "optimization_disabled": true,
+    "fresh_public_paper_extraction": true
+  },
+  "integration_summary": {
+    "status": "PASS",
+    "distinct_archive_identities": 12,
+    "nested_integrity_checks": 590,
+    "pinned_sources": 30,
+    "newton_steps": 13,
+    "rejected_branch_excluded": true
+  },
+  "retained_seals": [
+    {
+      "filename": "01_FINAL_CLEAN_EXACT_VALUE_CLOSURE_e592.zip",
+      "sha256": "e592932a0e12ee7fa97d9a1a30b84abd17a3293f1546fda9fd9818415c34edea",
+      "byte_identical": true
+    },
+    {
+      "filename": "02_FINAL_INTEGRATED_HOSTILE_AUDIT_7b57.zip",
+      "sha256": "7b576bff6886029e1e00cbf9f70c51be42f50c2076c2af65cf6fab6843db24ef",
+      "byte_identical": true
+    },
+    {
+      "filename": "03_PROJECT_SOURCE_PROVENANCE_AUDIT_b517.zip",
+      "sha256": "b517f69ecfd22084ffcc51251be928a1340432157bc4359e85f1fa9156ff063c",
+      "byte_identical": true
+    },
+    {
+      "filename": "historical/04_PAPER_V0_1_1_0ea5.zip",
+      "sha256": "0ea54751e6209b64ff7957363195c1511b442d4fb2dd823421046ba85a09d0a0",
+      "byte_identical": true
+    },
+    {
+      "filename": "historical/05_paper_v0_1_1_c1a6.pdf",
+      "sha256": "c1a6e364425a61ca8bae4e94cdf50e81f1a11b9ba3373e481747050e2b426bd0",
+      "byte_identical": true
+    },
+    {
+      "filename": "06_REJECTED_SOL_O6_PROOF_e452.zip",
+      "sha256": "e4521901d521d3c4c93e04784a2e178ca410896ee291e5a899e82db27ed85a95",
+      "byte_identical": true
+    },
+    {
+      "filename": "07_REJECTED_SOL_O6_HOSTILE_AUDIT_01ee.zip",
+      "sha256": "01ee95689ac0991962161a2398b414269e830a3a08abaabdc11b0fab5d1473a0",
+      "byte_identical": true
+    }
+  ],
+  "paper_build_render": {
+    "build_exit_code": 0,
+    "pages": 33,
+    "undefined_references": 0,
+    "undefined_citations": 0,
+    "fatal_latex_errors": 0,
+    "overfull_boxes_pt": [
+      0.23207
+    ],
+    "exact_long_endpoints_in_pdf": true,
+    "pdf_metadata": {
+      "/Producer": "pdfTeX-1.40.25",
+      "/Author": "Dehao Lin",
+      "/Title": "An exact matching characterization of the finite-dimensional projective tensor supremum of the I3322 Bell inequality",
+      "/Subject": "",
+      "/Creator": "LaTeX with hyperref",
+      "/Keywords": "",
+      "/CreationDate": "D:20260919230840+08'00'",
+      "/ModDate": "D:20260919230840+08'00'",
+      "/Trapped": "/False",
+      "/PTEX.Fullbanner": "This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) kpathsea version 6.3.5"
+    },
+    "sha256": "81b75cd3a720ab0e2953bdbd79f70c969af5fc48ab01caa75f4522b229f51f2f",
+    "status": "PASS",
+    "build_engine": "pdfTeX 1.40.25 (TeX Live 2023/Debian)",
+    "build_passes": [
+      "pdflatex",
+      "bibtex",
+      "pdflatex",
+      "pdflatex"
+    ],
+    "shell_escape": false,
+    "network_used": false,
+    "substantial_overfull_boxes": 0,
+    "substantial_overfull_threshold_pt": 1.0,
+    "render_review": {
+      "status": "PASS",
+      "renderer": "Poppler pdftoppm",
+      "dpi": 105,
+      "pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "method": "Visual inspection of every rendered page, displayed as numbered two-page review sheets; final page displayed individually.",
+      "findings": "No clipping, overlap, missing glyphs or illegible layout. Author/title block page 1 and declarations page 19 fit cleanly. Exact-number lines and crosswalk/hash tables fit. One 0.23207 pt overfull hbox is not visually substantial."
+    }
+  },
+  "exact_long_decimal_strings_in_pdf": {
+    "status": "PASS",
+    "unique_strings": 16,
+    "strings": [
+      "0.0005824795297982988",
+      "0.0005824795369892252",
+      "0.2508753845139765",
+      "0.2508753845139765354",
+      "0.2508753845139765355",
+      "0.250875384513976535617336610945951298901321973971476246796391973158622991323050603025506260",
+      "0.250875384513976535617336610945951298901321973971476707728748045068866376435770152964357102",
+      "0.2508753845139766",
+      "0.2508753855",
+      "0.8782729451808",
+      "0.878272945180812199461677854479963547717241304597573912661746000456489010475417113206932884",
+      "0.878272952173734583819480075317750711672962664979312588545615521238490507114264476586355651",
+      "0.87827295218",
+      "3.48002909287387920997544898183182987998806066768305662514348825306622243384968318433976825",
+      "3.57068402546763126912045926632115988647904165952465340467067063466386183321219918274406572",
+      "4.60932356071910243385112719549938850842"
+    ]
+  },
+  "python_syntax": {
+    "status": "PASS",
+    "files_checked": 9
+  },
+  "citation_issue_yaml": {
+    "status": "PASS",
+    "citation_yaml_parse": "PASS",
+    "cff_1_2_0_used_field_validation": "PASS",
+    "validation_scope": "Offline validation of all fields used; no network schema retrieval or invented repository URL/DOI/ORCID.",
+    "author_count": 1,
+    "issue_template_front_matter": [
+      "mathematical_proof_issue.md",
+      "provenance_documentation_correction.md",
+      "replay_certificate_failure.md"
+    ],
+    "issue_config": "PASS"
+  },
+  "licensing": {
+    "status": "PASS",
+    "code": "MIT",
+    "prose": "CC-BY-4.0",
+    "third_party_frozen_exclusion": "EXPLICIT",
+    "standard_cc_text_unchanged": true
+  },
+  "helper_negative_checks": {
+    "status": "PASS",
+    "checks": [
+      {
+        "test": "valid actual release-assets fixture and bundle",
+        "passed": true
+      },
+      {
+        "test": "modified release asset",
+        "rejected": true,
+        "reason": "SHA-256 mismatch: README.md"
+      },
+      {
+        "test": "unlisted release asset",
+        "rejected": true,
+        "reason": "Tree inventory differs from manifest"
+      },
+      {
+        "test": "missing listed release asset",
+        "rejected": true,
+        "reason": "Tree inventory differs from manifest"
+      },
+      {
+        "test": "manifest traversal",
+        "rejected": true,
+        "reason": "Unsafe relative path"
+      },
+      {
+        "test": "manifest absolute",
+        "rejected": true,
+        "reason": "Unsafe relative path"
+      },
+      {
+        "test": "manifest Windows path",
+        "rejected": true,
+        "reason": "Unsafe relative path"
+      },
+      {
+        "test": "manifest backslash",
+        "rejected": true,
+        "reason": "Unsafe relative path"
+      },
+      {
+        "test": "manifest duplicate case",
+        "rejected": true,
+        "reason": "Duplicate/case-colliding manifest name"
+      },
+      {
+        "test": "ZIP traversal",
+        "rejected": true,
+        "reason": "Unsafe relative path"
+      },
+      {
+        "test": "ZIP absolute",
+        "rejected": true,
+        "reason": "Unsafe relative path"
+      },
+      {
+        "test": "ZIP Windows path",
+        "rejected": true,
+        "reason": "Unsafe relative path"
+      },
+      {
+        "test": "ZIP duplicate case",
+        "rejected": true,
+        "reason": "Duplicate/case-colliding ZIP member"
+      },
+      {
+        "test": "ZIP symlink",
+        "rejected": true,
+        "reason": "ZIP symlink"
+      }
+    ],
+    "negative_count": 13,
+    "fixture_policy": "Only fresh work fixtures were mutated; original release assets were verified again afterward."
+  },
+  "historical_arithmetic_observer_rerun": false,
+  "rejected_branch_executed": false,
+  "external_human_validation": "PENDING",
+  "journal_peer_review": "PENDING",
+  "arxiv_submission": false,
+  "git_initialized": false,
+  "remote_created": false,
+  "published_or_pushed": false,
+  "researchers_contacted": false,
+  "post_seal_boundary": "Final ZIP digests, fresh extraction and repository-entry-point results are recorded in the external PUBLIC_RELEASE_FINALIZATION_RECEIPT.json to avoid circular hashes.",
+  "repository_static_checks": {
+    "status": "PASS",
+    "required_files": 38,
+    "local_links": 101,
+    "tex_includes": 20,
+    "text_files_scanned": 73,
+    "frozen_files_verified": 25,
+    "local_path_markers": 0,
+    "exact_endpoint_strings": "PASS",
+    "scope_status_invariants": "PASS",
+    "boundary": "Static consistency checks; semantic proof/authority review is separate"
+  },
+  "release_asset_manifest_files_verified": 16,
+  "public_path_scan": {
+    "status": "PASS",
+    "readable_repository_path_leaks": 0,
+    "public_pdf_path_leaks": 0,
+    "deprecated_history_term_occurrences": 0,
+    "unresolved_author_license_placeholders": [],
+    "sealed_unique_archives": 23,
+    "sealed_member_records_with_markers": 50,
+    "sealed_marker_occurrences": 353,
+    "scan_errors": [],
+    "transcript_filename_candidates": [],
+    "not_exhaustive_personal_data_classification": true
+  }
+}

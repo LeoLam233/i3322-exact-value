@@ -1,0 +1,139 @@
+{
+  "scope": "HISTORICAL prior repository assembly execution, copied from the supplied repository; not current public-finalization execution or external human review",
+  "input_manifest_entries": 11,
+  "package_manifest_entries": 329,
+  "package_manifests": "PASS",
+  "full_frozen_wrapper": {
+    "input_sha256": "73991d0bf7417de9586fbaf4f864900562f67f535732caa10299b374c7b3aa10",
+    "manuscript_inventory_files": 114,
+    "mode": "full",
+    "commands": [
+      {
+        "name": "integration",
+        "exit_code": 0,
+        "elapsed_seconds": 0.6560000000026776
+      },
+      {
+        "name": "integration_mutations",
+        "exit_code": 0,
+        "elapsed_seconds": 0.39100000000325963
+      },
+      {
+        "name": "r0",
+        "exit_code": 0,
+        "elapsed_seconds": 0.3129999999946449
+      },
+      {
+        "name": "r1",
+        "exit_code": 0,
+        "elapsed_seconds": 3.687000000005355
+      },
+      {
+        "name": "o1_o5",
+        "exit_code": 0,
+        "elapsed_seconds": 13.26600000000326
+      },
+      {
+        "name": "o6",
+        "exit_code": 0,
+        "elapsed_seconds": 598.8899999999994
+      }
+    ],
+    "software_proof_assistant": false,
+    "historical_full_arithmetic_observer_rerun": false,
+    "o6_certificate_comparisons": {
+      "central_monotonicity.json": true,
+      "custody.json": true,
+      "existence.json": true,
+      "full_cover.json": true,
+      "hostile_audit.json": true,
+      "local_manifold.json": true,
+      "local_manifold_refined.json": true,
+      "parameter_uniqueness.json": true,
+      "phase_geometry.json": true,
+      "root.json": true,
+      "scalar.json": true,
+      "symbolic.json": true
+    },
+    "status": "PASS"
+  },
+  "integration": {
+    "status": "PASS",
+    "archive_identities": 12,
+    "nested_integrity_comparisons": 590,
+    "newton_inclusions": 13
+  },
+  "historical_arithmetic_observer_rerun": false,
+  "new_latex_build": false,
+  "new_pdf_visual_review": false,
+  "mathematical_source_changes": 0,
+  "frozen_certificate_changes": 0,
+  "rejected_branch_executed": false,
+  "sealed_asset_path_exception": "User authorized unchanged archives with disclosure; repository itself is path-free",
+  "preseal_static_checks": {
+    "repository_static_checks": {
+      "status": "PASS",
+      "required_files": 34,
+      "local_links": 89,
+      "tex_includes": 20,
+      "text_files_scanned": 64,
+      "frozen_files_verified": 25,
+      "local_path_markers": 0,
+      "exact_endpoint_strings": "PASS",
+      "scope_status_invariants": "PASS",
+      "boundary": "Static consistency checks; semantic proof/authority review is separate"
+    },
+    "verified_quoted_sha_occurrences": 164,
+    "unknown_quoted_sha_values": [],
+    "python_syntax": "PASS",
+    "paper_pages": 33,
+    "paper_pdf_text_metadata_local_path_markers": 0,
+    "paper_author_placeholders": "PRESERVED",
+    "all_long_endpoint_strings": "PASS",
+    "explicit_status_table": "PASS",
+    "manual_authority_review": {
+      "canonical_rejected_branch_use": false,
+      "history_documentation_only": true,
+      "no_new_human_or_journal_validation_claim": true,
+      "theorem_scope_preserved": true
+    },
+    "no_git_metadata": true
+  },
+  "assembly_helper_negative_checks": {
+    "valid_fixture": "PASS",
+    "negative_checks": [
+      {
+        "test": "modified payload",
+        "rejected": true
+      },
+      {
+        "test": "unlisted payload",
+        "rejected": true
+      },
+      {
+        "test": "missing listed payload",
+        "rejected": true
+      },
+      {
+        "test": "manifest path traversal",
+        "rejected": true
+      },
+      {
+        "test": "manifest duplicate case",
+        "rejected": true
+      },
+      {
+        "test": "ZIP traversal",
+        "rejected": true
+      },
+      {
+        "test": "ZIP duplicate case",
+        "rejected": true
+      }
+    ],
+    "count": 7,
+    "status": "PASS"
+  },
+  "repository_wrapper_integration_check": "PASS",
+  "record_kind": "HISTORICAL; current evidence is FINALIZATION_CHECKS.json"
+}

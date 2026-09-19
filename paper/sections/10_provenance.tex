@@ -1,0 +1,57 @@
+\section{External premises and source provenance}\label{sec:provenance}
+The remaining non-elementary external theorem premises are exactly
+Coladangelo v1 Theorem 7.1, the finite-projective tensor clause of
+Theorem 7.2, Proposition 10.9, and the standard finite-dimensional
+real-analytic stable/unstable manifold theorem. The first three are stated
+in External premise~\ref{prem:Coladangelo} and refer to one fixed v1 PDF,
+whose identity is recorded in Appendix~\ref{app:audits}. They share proof
+ancestry: Theorem 7.2 uses the scalar-certificate theory, while Proposition
+10.9 also uses the source's finite-approximation and equality arguments.
+Multiple AI-generated branches that consume these premises are not
+independent confirmations of them.
+
+The parameterization-method article~\cite{CabreFontichLlave2003} supplies
+a standard reference for analytic regularity, with the stable/unstable
+specialization described in its Theorem 1.1 discussion. The textbook
+\cite{Shub1987} is a reference for the classical local theory. The frozen
+provenance audit inspected the analytic article; it verified the textbook's
+publisher metadata but did not successfully obtain and inspect its full
+text. This is not represented as a new independent proof of the general
+theorem. Its concrete applicability here---analyticity, invertibility,
+hyperbolicity and direction counts---is established in
+Lemma~\ref{lem:tails}.
+
+Pauwels's preprint and its associated formal development are comparison
+sources, not premises of the final theorem. In particular, their formal
+statements are not a Lean certification of the residual zero or of this
+high-precision enclosure. P\'al--V\'ertesi is historical context and
+construction ancestry. No reported floating-point optimum or conjectured
+optimality from that work is assumed.
+
+The R1 candidates are the two specific rational objects released by
+Mghirbi in v2.0.0~\cite{Mghirbi2026data}. Released-byte identity and exact
+validity have been independently certified. Complete numerical-generation
+ancestry before that release has not been reconstructed. This distinction
+matters: the proof of Proposition~\ref{prop:R1} accepts the explicit
+projectors and polynomial identity after exact checking, and does not need
+the original solver trajectory to be correct or recoverable. The lower
+decimal printed in the frozen companion preprint is inaccurate in its last
+reported digits; the rational witness and its recomputed interval in this
+paper are the authority. Later source versions do not replace the frozen
+upper certificate.
+
+The source audit records other local textual errors, including a false
+sentence asserting that shifting an irreducible Jacobi matrix by a scalar
+identity makes all its entries positive. Such a shift cannot change the
+zero corner entries of a tridiagonal matrix. The actual weaker fact used
+here is positivity on a connected component, established by absolute-value
+maximization and zero propagation in Appendix~\ref{app:compactness}; no
+false source sentence is imported. Appendix~\ref{app:audits} records this
+and the remaining citation caveats.
+
+The zero-Douglas statement is precise: no Douglas/Apsiape theorem, data,
+code, root, witness, or PASS result is used as mathematical authority
+anywhere in the final chain. Historical mentions in provenance records
+are not theorem premises. The assembly used no project-specific material
+outside the supplied archive. Fresh web access was limited to bibliographic
+metadata checks; no proof step was imported from it.

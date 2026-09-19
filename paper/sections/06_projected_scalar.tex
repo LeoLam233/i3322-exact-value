@@ -1,0 +1,179 @@
+\subsection{Projected inversion and exclusion of asymmetric full matches}
+The first label equation in \eqref{eq:independentmatch} is
+\begin{equation}\label{eq:project}
+ x(t,\eta)+y(t,\zeta)=0.
+\end{equation}
+For a possible source crossing, \(x(t,\zeta)\ge0\) and
+\(y(t,\zeta)\le0\). The endpoint and monotonicity gates give
+\[
+ x(t,\zeta_a)+y(t,\zeta)>0,\qquad
+ x(t,\zeta_b)+y(t,\zeta)<0,\qquad x_\eta<0.
+\]
+The intermediate value theorem and strict monotonicity therefore give one
+and only one target phase \(\eta=\eta(t,\zeta)\) in the entire envelope.
+In particular, eliminating this phase does not assume a branch near a
+candidate point. The inverse is analytic wherever used, and
+\begin{equation}\label{eq:inversepartial}
+ \eta_\zeta=-\frac{y_\zeta(t,\zeta)}{x_\eta(t,\eta)},\qquad
+ \eta_t=-\frac{y_t(t,\zeta)+x_t(t,\eta)}{x_\eta(t,\eta)}.
+\end{equation}
+On this projected graph, define the two remaining residuals
+\begin{align}
+ \HH(t,\zeta)&=x(t,\zeta)+y(t,\eta(t,\zeta)),\label{eq:HK}\\
+ \KK(t,\zeta)&=q(t,\zeta)+q(t,\eta(t,\zeta))
+                -\sigma(t)+d(x(t,\zeta),y(t,\zeta)).\notag
+\end{align}
+Projection together with \(\HH=\KK=0\) is equivalent to the complete
+three-coordinate equation: if \(\HH=0\), both label pairs are reflected
+and \(d(x(t,\eta),y(t,\eta))=d(x(t,\zeta),y(t,\zeta))\); then \(\KK=0\)
+is exactly the complementary-\(q\) equation. Neither label equation alone
+checks the amplitude ratio.
+
+The contact identity \eqref{eq:contacttangent} and the projected equation,
+without assuming \(\HH=0\), give
+\begin{equation}\label{eq:HKderivatives}
+ \HH_\zeta=x_\zeta(t,\zeta)
+   -\frac{y_\eta(t,\eta)y_\zeta(t,\zeta)}{x_\eta(t,\eta)},\qquad
+ \KK_\zeta=(y(t,\zeta)+1/2)\HH_\zeta .
+\end{equation}
+These exact identities control interval overestimation on projected cells.
+Parameter derivatives instead use the full chain rule
+\eqref{eq:inversepartial}; the fixed-parameter contact relation is not
+applied to differentiation in \(t\).
+
+\begin{certificate}[Exhaustive full-match exclusions]\label{cert:cover}
+Let \(C_0=[0.0005,0.0007]\). Over the entire parameter box \(T^\Box\)
+and all independent target phases in \([\zeta_a,\zeta_b]\), a closed
+subdivision of the source envelope has 179 leaves. Each leaf passes one
+of these predicates:
+\begin{enumerate}
+\item \(x<0\) or \(y>0\) throughout the cell (7 leaves);
+\item the enclosure of \(\HH\) excludes zero (148 leaves);
+\item the enclosure of \(\KK\) excludes zero (22 leaves);
+\item the source cell lies in \(C_0\) and \(\HH_\zeta>0\)
+throughout its projected family (2 leaves).
+\end{enumerate}
+A separate closed cover of \emph{all} of \(C_0\), with 554 leaves,
+proves \(\HH_\zeta>0\) there. On \(C_0\), \(g=x+y\) has
+\(g_\zeta<0\), with \(g(t,0.0005)>0\) and \(g(t,0.0007)<0\).
+There are no unresolved leaves in either tree.
+\end{certificate}
+
+The finite input to each predicate is the analytic chart enclosure, not
+sampled points. The inverse enclosure starts from the entire target
+envelope and retains every solution under interval Newton intersection:
+\[
+ V_{\mathrm{new}}
+ =V\cap\left(m-\frac{x(t,m)+y(t,\zeta)}{[x_\eta](t,V)}\right).
+\]
+The first derivative interval covers the full envelope. A floating-point
+scout selects only a center, which is checked within the envelope; it does
+not supply an exclusion or a target-phase restriction. Each retained
+family has certified strict endpoint signs for the inverse. Subsequent
+derivative intersections use already justified bounds. Tree acceptance
+requires the children to have precisely the parent's endpoints and a
+common join, every child to be reached exactly once, and every terminal
+predicate to be resolved. These specifications are detailed in
+Appendix~\ref{app:intervalspec}.
+
+\begin{proposition}[Diagonal phases are a conclusion]\label{prop:diagonal}
+For each \(t\in T\) there is a unique analytic phase
+\(\phi(t)\in C_0\) with \(x(t,\phi)+y(t,\phi)=0\).
+Every intrinsic full match has
+\(\zeta=\eta=\phi(t)\).
+\end{proposition}
+\begin{proof}
+The signs and nonzero phase derivative of \(g\) give its unique root in
+\(C_0\), and the analytic implicit function theorem gives \(\phi\).
+At that root \(\eta=\phi\) solves \eqref{eq:project}; uniqueness of
+projected inversion identifies it as the target phase. Hence
+\(\HH(t,\phi)=0\). The separate full central cover proves strict
+monotonicity of \(\HH\) throughout \(C_0\), making \(\phi\) its only zero
+there. The full cover excludes every noncentral full match by one of
+the first three predicates. Lemma~\ref{lem:coverage} makes that cover
+exhaustive for the intrinsic matching set, including both zero boundaries.
+Thus every full match has the stated equal phases.
+\end{proof}
+Asymmetric solutions of the label equations are not discarded by
+symmetry. The \(\KK\)-exclusion cells rigorously exclude the remaining
+off-central label branches by their third-coordinate mismatch.
+
+\subsection{Scalar equivalence and full-interval monotonicity}
+We can now define
+\begin{equation}\label{eq:residual}
+ \Res(t)=2q(t,\phi(t))-\sigma(t)
+           +d(x(t,\phi(t)),y(t,\phi(t))).
+\end{equation}
+Equations \eqref{eq:germ}, \eqref{eq:W}, the unique zero defining
+\(\phi\), and \eqref{eq:residual} are an exact structural definition.
+Truncated polynomials serve only to enclose this analytic function.
+
+\begin{proposition}[Scalar/full-match equivalence]\label{prop:scalar}
+For every \(t\in T\),
+\[
+ \Res(t)=0\quad\Longleftrightarrow\quad
+ \mathcal M_{\sigma(t)}\ne\varnothing .
+\]
+\end{proposition}
+\begin{proof}
+Every full match is diagonal by Proposition~\ref{prop:diagonal}; its
+third-coordinate equation is precisely \(\Res=0\).
+Conversely, \(\Res(t)=0\) and \(g(t,\phi)=0\) give
+\(x=-y\) and \(2q=\sigma-d(x,y)\). Thus \(W(t,\phi)=R_{\sigma(t)}W(t,\phi)\)
+in all three coordinates. The positive-phase source tail and each of its
+five propagated steps are valid and decreasing. Reflecting this chain
+gives a valid decreasing forward tail to the negative fixed point.
+Since \(x>y\) and \(x=-y\), the joined state has \(x>0>y\).
+Applying \(\Phi_{\sigma(t)}^{-1}\) recovers every amplitude ratio and
+places the join in the canonical \(\Sigma\), \(\mathcal U_s\) and
+\(\mathcal V_s\). This is a genuine member of \(\mathcal M_s\).
+\end{proof}
+
+Implicit differentiation gives
+\(\phi'=-(x_t+y_t)/(x_\zeta+y_\zeta)\).
+Using \eqref{eq:contacttangent} in the full derivative of
+\eqref{eq:residual} cancels the phase terms and yields
+\begin{equation}\label{eq:residualderivative}
+ \Res'(t)=2q_t-\sigma'(t)+(2x-1)y_t
+ \quad\hbox{at }(t,\phi(t)).
+\end{equation}
+The partial derivatives on the right hold the phase fixed.
+
+\begin{certificate}[Global derivative and endpoint signs]\label{cert:scalar}
+On the entire closed box \(T^\Box\), the corrected analytic chart and
+the interval enclosure of the whole phase family give
+\[
+ 3.4800<\Res'(t)<3.5707.
+\]
+The analytic extension through \(a(L)\) satisfies
+\[
+ \Res(a(L))\in[-8.905044,-8.905043]\times10^{-16},\qquad
+ \Res(a(U))\in[2.4652543,2.4652544]\times10^{-8}.
+\]
+These displayed outward bounds contain the full exact decimal intervals
+in \pkg{scalar.json}; they are checked as rational comparisons.
+\end{certificate}
+This certificate encloses \(\phi(T^\Box)\) as an interval family and
+evaluates \eqref{eq:residualderivative} on the full parameter interval.
+It is not a set of derivative samples. Appendix~\ref{app:intervalspec}
+gives the full derivative receipt and its finite acceptance rule.
+
+\begin{theorem}[Global matching-parameter uniqueness]\label{thm:O6}
+The projection
+\[
+ \pi_s(\mathcal M)=\{s\in I:\mathcal M_s\ne\varnothing\}
+\]
+is a singleton \(\{s_*\}\).
+\end{theorem}
+\begin{proof}
+The strict derivative makes \(\Res\) increasing on \(T^\Box\), so it
+has at most one zero there. Proposition~\ref{prop:scalar} and the
+strict increase of \(\sigma\) then show that any two matching parameters
+in \(I\) are equal. The strict endpoint signs and continuity give a zero
+strictly between \(a(L)\) and \(a(U)\). The analytic extension through
+the excluded left endpoint justifies this use of the intermediate value
+theorem. Scalar equivalence supplies an intrinsic full match at that
+zero. This existence calculation is independent of using
+Proposition~\ref{prop:existmatch} as an existence premise, and uses no
+fine root enclosure as an input.
+\end{proof}

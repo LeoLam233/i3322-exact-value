@@ -1,0 +1,86 @@
+\section{Introduction}\label{sec:introduction}
+The \(I_{3322}\) Bell scenario has three binary measurements for each of two
+parties. Determining its quantum supremum is a concrete optimization problem
+in which the dimension of the underlying Hilbert spaces is unbounded, even
+when each strategy is finite-dimensional. Numerical optimization can suggest
+a limiting value, but does not identify that value exactly or establish that
+all admissible stationary configurations have been accounted for.
+
+P\'al and V\'ertesi studied high-dimensional strategies and the limiting-value
+problem~\cite{PalVertesi2010}. Recent preprints by
+Pauwels~\cite{Pauwels2026} and Coladangelo~\cite{Coladangelo2026v1} address the
+relation between finite-dimensional strategies and variational descriptions.
+Mghirbi's released rational witnesses~\cite{Mghirbi2026data,Mghirbi2026paper}
+provide finite objects from which a narrow interval can be checked exactly.
+Here the finite witnesses are independently verified, while the specific
+Coladangelo premises are stated in Section~\ref{sec:upstream}. P\'al--V\'ertesi
+and Pauwels supply historical context and comparison, not premises of the
+exact-value theorem proved below. In particular, the theorem is not presented
+as a consequence of numerical agreement or of a formalization of a different
+statement.
+
+Our target \(\St\), defined in Section~\ref{sec:normalization}, is the
+\emph{finite-dimensional, projective tensor-product supremum}. The subscript
+\(\mathrm t\) denotes this scope. It is unrelated to the outer-tail variable
+\(t=a(s)\) used later. No commuting-operator supremum is identified with
+\(\St\), and no such identification is needed.
+
+\begin{theorem}[Exact-value characterization]\label{thm:main}
+Let \(\St\) be the supremum in Definition~\ref{def:St}, and let
+\[
+ L=0.2508753845139765,\qquad U=0.2508753855,\qquad I=(L,U].
+\]
+Let \(\mathcal M_s\) be the full-state matching set in
+Definition~\ref{def:matching}, with valid decreasing chains and crossing
+convention \(x\geq0>y\). There is a unique \(s_*\in I\) with
+\(\mathcal M_{s_*}\ne\varnothing\), and
+\[
+ \boxed{\St=s_*.}
+\]
+Equivalently, with the exactly specified analytic germ, propagated chart,
+implicit phase and residual of Section~\ref{sec:uniqueness},
+\[
+ \St=\sigma(t_*),\qquad
+ \Res(t_*)=0,\qquad t_*\in a(I),
+\]
+where \(t_*\) is the unique zero on that entire interval. The exact rational
+endpoints \(\ell,h\) displayed below satisfy \(\ell<\St<h\).
+The conclusion uses External premises~\ref{prem:Coladangelo}
+and~\ref{prem:stable}, together with the finite certificates explicitly
+specified in this manuscript.
+\end{theorem}
+\input{tables/enclosure}
+The two 90-place terminating decimals are rational numbers, and
+\begin{equation}\label{eq:width}
+\begin{aligned}
+ h-\ell&=
+ \frac{460932356071910243385112719549938850842}{10^{90}}
+ \\
+ &=4.60932356071910243385112719549938850842\times10^{-52}.
+\end{aligned}
+\end{equation}
+The exact result is the unique-root characterization, rather than a claim
+that either decimal endpoint is the value or that an elementary closed form
+has been found.
+
+The proof has three mathematical stages. First, a finite lower witness and
+a dimension-independent positive polynomial certificate put \(\St\) in
+\(I\). A variational compactness argument then produces one positive,
+square-summable, strictly decreasing stationary carrier at \(\St\), with
+outer endpoint limits. Second, hyperbolic local dynamics turns the carrier
+problem into matching two tails in all three state coordinates. Third, a
+validated analytic chart and exhaustive finite covering argument treat the
+two independent tail phases. Only after the full matching equations exclude
+off-diagonal phases is a central scalar residual used. Its derivative has a
+strict sign throughout the full parameter interval. The exact identification
+is then a short theorem composition; high precision root isolation follows
+after uniqueness is established.
+
+This is a machine-assisted proof with replayable certificates. The numerical
+subdivisions certify finitely many interval predicates; analytic arguments
+explain why those predicates imply statements about every admissible chain.
+The proof is not a proof-assistant formalization. The validation record is
+reported separately in Sections~\ref{sec:reproducibility}--\ref{sec:validation}
+and Appendix~\ref{app:audits}, including the remaining implementation and
+provenance caveats and the absence of external expert human validation and
+journal peer review of the new exact-value theorem.

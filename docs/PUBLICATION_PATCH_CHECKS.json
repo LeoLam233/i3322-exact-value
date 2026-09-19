@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "patch": "pre-publication GitHub identity/URL + privacy-safe release transport",
+  "canonical_repository": "https://github.com/LeoLam233/i3322-exact-value",
+  "github_username": "LeoLam233",
+  "input_public_repo_zip_sha256": "579e2c610e9a3951a2c17587a5715bda92fc1a87348c9ff275dedd5bd1104fef",
+  "input_full_release_assets_zip_sha256": "93ac17e3d1471a8d74f5f88f9029b9852c2d221f70b13ecd6fb00bc606d28598",
+  "canonical_theorem_archive_sha256": "e592932a0e12ee7fa97d9a1a30b84abd17a3293f1546fda9fd9818415c34edea",
+  "paper_pdf_sha256": "81b75cd3a720ab0e2953bdbd79f70c969af5fc48ab01caa75f4522b229f51f2f",
+  "sealed_paper_replay_package_sha256": "1aa58a1d74f1aa130024196f4f537fcab293e7d78bab073d8432077348ee9905",
+  "public_source_zip_sha256": "10e6e1b2a9b6ac8f80999ae87e407311a7edea7458adfab132d051765bf5af3b",
+  "public_asset_manifest_sha256": "48815e5e8ee972124e1cc00f2ac3fcc9534918566cccb95bd6cd29b7edfc61f2",
+  "private_full_reviewer_assets_outer_sha256": "93ac17e3d1471a8d74f5f88f9029b9852c2d221f70b13ecd6fb00bc606d28598",
+  "privacy_finding": "historical personal email and superseded local Git identity occur only inside immutable nested Git reflogs in affected frozen archives; exact values intentionally not reproduced in public documentation",
+  "public_policy": "affected frozen archives withheld from public GitHub Release; hashes remain public; byte-identical full reviewer package retained privately",
+  "readable_repo_private_identity_marker_counts": [
+    0,
+    0
+  ],
+  "public_assets_private_identity_marker_counts": [
+    0,
+    0
+  ],
+  "mathematical_content_changed": false,
+  "mathematical_files_changed": [],
+  "changed_readable_files": [
+    "AUDIT_ME_FIRST.md",
+    "AUTHORSHIP.md",
+    "CITATION.cff",
+    "LIMITATIONS.md",
+    "PROVENANCE.md",
+    "PUBLICATION_CHECKLIST.md",
+    "README.md",
+    "REPRODUCE.md",
+    "docs/PROJECT_HISTORY.md",
+    "docs/REPOSITORY_ARCHITECTURE.md",
+    "docs/VALIDATION_STATUS.md",
+    "machine/README.md",
+    "machine/replay.py",
+    "paper/README.md",
+    "provenance/ARTIFACT_HASHES.md",
+    "provenance/artifact_index.json",
+    "release/RELEASE_ASSETS.md",
+    "release/RELEASE_NOTES_v0.1.0.md",
+    "release/SHA256SUMS",
+    "tools/verify_release_assets.py",
+    "tools/verify_repository.py"
+  ],
+  "added_readable_files": [
+    "docs/PUBLICATION_PATCH_CHECKS.json",
+    "release/PRIVATE_REVIEW_SHA256SUMS",
+    "release/SEALED_ARTIFACT_PRIVACY.md"
+  ],
+  "removed_readable_files": [
+    "MANIFEST.sha256"
+  ],
+  "verification": {
+    "repository_static": "PASS",
+    "public_release_assets": "PASS",
+    "private_reviewer_assets_and_bundle": "PASS",
+    "citation_cff_yaml_parse": "PASS",
+    "public_private_identity_scan": "PASS"
+  },
+  "historical_record_boundary": "docs/FINALIZATION_CHECKS.json remains the earlier offline-finalization record; its remote/push=false fields are historical and not a live GitHub-state assertion."
+}

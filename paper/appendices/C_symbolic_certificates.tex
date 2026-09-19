@@ -1,0 +1,186 @@
+\section{Symbolic identities and interval certificate specifications}
+\label{app:symbolic}
+\subsection{Exact algebra}
+All rational-map identities in Lemma~\ref{lem:rational} are tested by
+clearing denominators on their stated nonzero domain and requiring the
+numerator to be the zero polynomial. Sparse coefficients are exact
+rationals. The checker also embeds the production propagation and
+Jacobian formulas in the independent polynomial arithmetic and compares
+each entry with direct differentiation. Pointwise numerical agreement
+is not the acceptance criterion.
+
+In canonical coordinates the local symbolic certificate supplies the six
+fixed-point residuals, the two characteristic polynomials and Jacobian
+determinants, the reciprocal-spectrum identities, \(r(t)r(-t)=1\),
+the parameter inverse polynomial and \(\sigma'\).
+The characteristic sign argument in Lemma~\ref{lem:tails} then establishes
+the relevant dimensions; it is not a floating-point eigenvalue count.
+The R0 finite checker separately regenerates 35 polynomial identities
+and 15 rational comparisons supporting Appendix~\ref{app:carrier}.
+
+For the rational-coordinate proof there are 48 exact identities.
+Their roles are the implemented-map and Jacobian comparison, canonical
+conjugacy, both inverse identities, reverser involution and reversibility,
+contact covariance and determinant, fixed-point and spectral formulas,
+the tangent eigenvector, projected contact differentiation and the
+conditional scalar derivative cancellation.
+One useful propagated phase identity, obtained by differentiating
+\eqref{eq:Fhat} and substituting \eqref{eq:contacttangent}, is
+\begin{align*}
+ z_\zeta={}&-\frac{B_0(y)}{q^2}x_\zeta+
+ \left(\frac1{2q}+\frac{(x-1/2)y}{q^2}
+       -\frac{2(x-1/2)^2B_0(y)}{q^3}\right)y_\zeta,\\
+ Q_\zeta={}&(1/2-y)z_\zeta.
+\end{align*}
+The independently differentiated formula must agree exactly before its
+interval version is used to tighten a propagated derivative enclosure.
+The identities alone do not assert completeness of a matching chart,
+symmetry of a full match, or a derivative sign.
+
+\subsection{Exact interval domain and analytic majorants}\label{app:intervalspec}
+The outer interval \(T^\Box=[t^\Box_-,t^\Box_+]\) is the outward
+evaluation of the two radicals \(a(L),a(U)\) by the frozen interval code.
+Its exact rational decimal endpoints are
+\begin{center}\footnotesize
+\(t^\Box_-=\)\texttt{0.878272945180812199461677854479963547717241304597573912661746000456489010475417113206932884}
+\par\smallskip
+\(t^\Box_+=\)\texttt{0.878272952173734583819480075317750711672962664979312588545615521238490507114264476586355651}
+\end{center}
+The local complex rectangle is
+\(\{t:|\Re t-t_c|\le10^{-5},\,|\Im t|\le10^{-5}\}\), where \(t_c\)
+is the recorded real center. Its positive distance from \(T^\Box\)
+is \(\Delta_t\), used in the Cauchy derivative error.
+All coefficients are enclosed on this complex rectangle, rather than
+only at real sample points.
+
+For completeness the majorants used in Certificate~\ref{cert:local}
+can be checked from the coefficient boxes as follows. For a phase
+radius \(h_0\) and correction allowance \(e_0\), set
+\[
+ d_i(h_0)=\sum_{n=1}^N|c_{n,i}|h_0^n,\qquad
+ X=|t|+d_x(h_0)+e_0,\quad Y=|t|+d_y(h_0)+e_0,
+\]
+and let \(q_0=\inf|G(t)|-d_q(h_0)-e_0>0\).
+Put
+\[
+ B_M=(1+Y^2)/4,\qquad
+ Z=\frac{Y}{2q_0}+\frac{(X+1/2)B_M}{q_0^2}+\frac12.
+\]
+The coordinate bounds for \(\widehat F_{\sigma(t)}\) are
+\[
+ Y,\qquad Z,\qquad
+ |\sigma(t)|+YZ+(Y+Z)/2+1+B_M/q_0.
+\]
+For its Jacobian, define
+\[
+ a_1=\frac{B_M}{q_0^2},\quad
+ a_2=\frac1{2q_0}+\frac{(X+1/2)Y}{2q_0^2},\quad
+ a_3=\frac{Y}{2q_0^2}+\frac{2(X+1/2)B_M}{q_0^3}.
+\]
+An upper row-sum bound is
+\[
+ L_F=\max\left\{1,\ a_1+a_2+a_3,\quad
+ (Y+1/2)(a_1+a_2+a_3)+Z+1/2+\frac{Y}{2q_0}
+                                      +\frac{B_M}{q_0^2}\right\}.
+\]
+Use \(h_0=R_0/m,e_0=0\) to bound the defect on \(R_0=0.2\)
+by the sum of the propagation and polynomial bounds. Use
+\(h_0=r_0/m,e_0=\epsilon_N/m^{N+1}\) for the contraction bound
+on \(r_0=0.01\). Complex divisions and square roots reject a
+rectangle meeting a forbidden denominator or branch. The finite gates
+are \(m>1\), \(q_0>0\), \(\Delta_t>0\), \(\kappa<1/2\), and
+\(\delta_N+\kappa\epsilon_N\le\epsilon_N\), with the quantities defined
+in the proof of Certificate~\ref{cert:local}. These finite inequalities
+are what turn the polynomial into an analytic enclosure.
+
+The recorded corrections and contractions admit the following outward
+rational summaries, independently compared with the exact receipts:
+\begin{center}
+\begin{tabular}{lcc}
+Quantity & Degree 36 & Degree 48\\ \hline
+Correction bound & \(<3.414\,10^{-47}\)&\(<8.334\,10^{-63}\)\\
+Contraction factor & \(<6.891\,10^{-27}\)&\(<4.409\,10^{-36}\)\\
+Complex \(|q|\) lower bound & \(>0.2444\)&\(>0.2444\)\\
+\(|\mu|\) lower bound & \(>5.8365\)&\(>5.8365\)\\
+Parameter margin & \(>9.996\,10^{-6}\)&\(>9.996\,10^{-6}\)
+\end{tabular}
+\end{center}
+
+\subsection{Cover and scalar receipts}
+Each geometry-tree node records a closed phase interval. A nonterminal
+node must have two children whose outer endpoints equal the parent's
+and whose inner endpoints agree exactly. Both children must be
+nondegenerate. Every node must be reachable once from the root;
+cycles, missing children and unused nodes are rejected. A geometry
+leaf records, for every iterate, the three state intervals, three
+phase-derivative intervals and the complementary-\(q\) interval.
+Strict endpoint signs certify the predicates of
+Certificate~\ref{cert:geometry}.
+
+Every matching-cover leaf covers \(T^\Box\), its source-phase cell,
+and \emph{all} possible target phases in the original envelope.
+The projected target interval contains every solution of the
+monotone inverse equation. A leaf records either the outside-section
+label intervals or the projected \(\HH,\KK,\HH_\zeta\) intervals and
+associated derivatives. The accepted terminal predicates are precisely
+those in Certificate~\ref{cert:cover}. The separate central tree covers
+all of \(C_0\), including cells where the main tree used another
+predicate. This is why global central monotonicity does not follow
+merely from the two retained central leaves.
+
+The scalar receipt encloses the whole implicit phase family inside
+\[
+ [0.0005824795297982988,0.0005824795369892252].
+\]
+The exact derivative interval is
+\begin{center}\footnotesize
+lower endpoint:\par\smallskip
+\texttt{3.48002909287387920997544898183182987998806066768305662514348825306622243384968318433976825}
+\par\smallskip
+upper endpoint:\par\smallskip
+\texttt{3.57068402546763126912045926632115988647904165952465340467067063466386183321219918274406572}
+\end{center}
+It lies strictly in \((3.4800,3.5707)\).
+The receipt also encloses \(\sigma'\) by positive endpoints, computes
+the quotient derivative in \(s\), and verifies the two global endpoint
+residual signs. The root receipt records each input interval, exact
+center, residual interval and output interval in \eqref{eq:newton}.
+Independent rational arithmetic checks the quotient enclosure, all
+13 intersections, their nesting and strict shrinkage, the final
+\(10^{-52}\) inflation, the strict signs and exact width.
+
+\subsection{Source-level certificate locator}
+Paths in this table are relative to the component roots identified in
+Appendix~\ref{app:crosswalk}; they are available offline in the bundled
+input archive.
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.17\textwidth}>{\raggedright\arraybackslash}p{0.36\textwidth}>{\raggedright\arraybackslash}p{0.37\textwidth}}
+Component & Certificate or checker & Mathematical output\\ \hline
+R0 & \path{certificates/finite_exact.json};
+\path{src/exact_checks.py} & Tail polynomial identities, finite
+comparisons, root signs; analytic construction remains Appendix A.\\
+R1 & \path{certificate/candidate/};
+\path{src/lower.py}, \path{src/upper.py}
+& Valid finite strategy and positive exact word identity.\\
+Local matching & \path{certificates/symbolic_certificate.json};
+\path{src/symbolic_cert.py}
+& Fixed points, characteristic factors, inverse parameter formula.\\
+Global matching & \path{certificates/symbolic.json};
+\path{src/exact.py}
+& 48 rational identities, including production-formula agreement.\\
+Global matching & \path{certificates/local_manifold.json};
+\path{certificates/local_manifold_refined.json};
+\path{src/manifold.py}
+& Complex analytic-germ and derivative error bounds, degrees 36/48.\\
+Global matching & \path{certificates/phase_geometry.json};
+\path{certificates/full_cover.json};
+\path{certificates/central_monotonicity.json};
+\path{src/global_cover.py}
+& Complete valid chart; projected inverse; all off-central
+exclusions and full central monotonicity.\\
+Global matching & \path{certificates/scalar.json};
+\path{certificates/root.json}; \path{src/scalar.py}
+& Full-domain derivative, existence signs, 13-step strict bracket.\\
+Final closure & \path{replay_all.py};
+\path{logs/O8_EXACT_CHECKS.json}
+& Frozen-interface composition and rational integration arithmetic.\\
+\end{longtable}

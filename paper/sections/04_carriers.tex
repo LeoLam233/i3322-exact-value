@@ -1,0 +1,99 @@
+\section{Outer stationary carriers and recurrence}\label{sec:carriers}
+For \(s\in I\), define
+\begin{align}
+ a(s)&=\sqrt{\frac{4s+5+\sqrt{16s^2+24s-7}}8},\label{eq:a}\\
+ r(c)&=\frac{\sqrt{1-c^2}(2c-1)}{(1-c)(2c+1)}.\label{eq:r}
+\end{align}
+The ratio formula is used at the outer labels \(\pm a(s)\), where all its
+denominators are nonzero. The stationary map on state coordinates
+\((x,y,u)\) is
+\begin{equation}\label{eq:F}
+ \begin{gathered}
+ v=\frac{2(s-d(x,y))-w(x)/u}{w(y)},\qquad
+ z=\frac{(1-2x)+2yv/w(y)}{2v^2}-\frac12,\\
+ F_s(x,y,u)=(y,z,v).
+ \end{gathered}
+\end{equation}
+Its underlying state domain is \(\mathcal D=(-1,1)^2\times(0,\infty)\).
+A \emph{valid step} requires that \eqref{eq:F} be defined and that
+\(z\in(-1,1)\), \(v>0\). Every iterate used in this paper includes validity
+of all intervening steps. A chain is decreasing if its states are
+\((c_j,c_{j+1},u_j)\) with \(c_j>c_{j+1}\), and all its steps are valid.
+
+\begin{definition}[Admissible carriers]\label{def:carrier}
+For \(s\in I\), \(\Cs\) consists of real bilateral pairs \((c,\lambda)\)
+satisfying
+\begin{equation}\label{eq:carrierconditions}
+\begin{gathered}
+ -1<c_j<1,\quad c_j>c_{j+1},\quad \lambda_j>0,\quad
+ \sum_{j\in\ZZ}\lambda_j^2=1,\quad H(c)\lambda=s\lambda,\\
+ u_j=\lambda_j/\lambda_{j-1},\qquad
+ F_s(c_j,c_{j+1},u_j)=(c_{j+1},c_{j+2},u_{j+1})
+ \quad\hbox{by valid steps},\\
+ (c_j,u_j)\longrightarrow(a(s),r(a(s)))\quad(j\to-\infty),\\
+ (c_j,u_j)\longrightarrow(-a(s),r(-a(s)))\quad(j\to+\infty).
+\end{gathered}
+\end{equation}
+These are admissibility conditions. Membership at a parameter \(s\) does
+not itself identify \(s\) with the Bell supremum.
+\end{definition}
+
+\begin{theorem}[Existence of an outer carrier at the supremum]\label{thm:R0}
+Under External premise~\ref{prem:Coladangelo} and
+Proposition~\ref{prop:R1}, \(\mathcal C_{\St}\ne\varnothing\).
+At its tails \(r(a(\St))>1\) and \(0<r(-a(\St))<1\).
+\end{theorem}
+\begin{proof}
+We give the construction and the necessary tail selection in
+Appendix~\ref{app:carrier}, with the following logical order.
+For the monotone finite approximants supplied by External
+premise~\ref{prem:Coladangelo}(3), the variation estimate
+\[
+ \langle f,J_m(\gamma)f\rangle
+ \le\tfrac14\|f\|_2^2+\tfrac12\TV(\gamma)\|f\|_\infty^2
+\]
+prevents unit top eigenvectors from vanishing after a maximum coordinate is
+translated to zero. A coordinatewise limit gives a nonzero nonnegative
+\(\ell^2\) eigenvector at \(\St=q^*\) and nonincreasing labels. The universal
+Jacobi comparison in Proposition~\ref{prop:qstar} excludes finite and
+half-line support by an explicit endpoint perturbation. All labels are
+therefore interior and all amplitudes positive.
+
+Finite label variations give stationarity and \eqref{eq:F}. Equality in the
+two scalar inequalities \eqref{eq:storage} gives differentiability of the
+storage function at saturated labels and uniqueness of their saturated
+predecessor and successor. A plateau would propagate to a constant carrier,
+whose value is at most \(1/4\). Thus labels decrease strictly.
+
+The remaining steps cannot be replaced by assuming an outer tail. Endpoint
+limits \(\pm1\) are excluded directly from stationarity and the eigenvalue
+equation. A positive Jacobi ratio lemma proves actual ratio limits and uses
+square summability to select their sides of one. Eliminating these limits
+gives
+\[
+ (s-t^2)\{4t^4-(4s+5)t^2+s+2\}=0.
+\]
+A five-site second variation excludes \(s=t^2\). The quartic has inner and
+outer magnitudes. A concavity argument excludes mixed magnitudes, and strict
+decrease excludes the remaining inner pair. This yields exactly the four
+outer limits in \eqref{eq:carrierconditions}, not an assumption of symmetry
+of the full carrier.
+\end{proof}
+
+For clarity, the recurrence itself follows from two different equations.
+At site \(j\), divide the Jacobi equation by \(\lambda_j\). At label
+\(j+1\), differentiate the finite label variation of the Rayleigh form
+and divide by \(\lambda_j^2\). With
+\((x,y,z)=(c_j,c_{j+1},c_{j+2})\) and
+\((u,v)=(\lambda_j/\lambda_{j-1},\lambda_{j+1}/\lambda_j)\), the results are
+\begin{equation}\label{eq:stationarypair}
+ w(x)/u+w(y)v=2(s-d(x,y)),\qquad
+ (x-1/2)+(z+1/2)v^2-yv/w(y)=0.
+\end{equation}
+Solving these equations is precisely \eqref{eq:F}. Positivity of the
+amplitudes and interior labels justify all divisions.
+
+Theorem~\ref{thm:R0} is existential. It neither classifies every optimizer
+nor asserts carrier uniqueness, finite-dimensional attainment, or a
+symmetry of all optimal strategies. This limited conclusion is sufficient:
+the subsequent uniqueness theorem concerns the matching \emph{parameter}.

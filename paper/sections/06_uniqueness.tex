@@ -1,0 +1,242 @@
+\section{Global uniqueness of the matching parameter}\label{sec:uniqueness}
+\subsection{Rational coordinates and reversibility}
+The phase variables in this section are \(\zeta,\eta\). They are independent
+and must not be confused with the amplitude ratio \(u\) in \(F_s\).
+Write \(B_0(x)=b(x)^2=(1-x^2)/4\). On a valid complete chain set
+\begin{equation}\label{eq:Phi}
+ \Phi_s(x,y,u)=(x,y,q),\qquad
+ q=s-d(x,y)-b(x)/u,\qquad \bar q=s-d(x,y)-q.
+\end{equation}
+Here \(q=b(y)v>0\), \(\bar q=b(x)/u>0\), and the inverse is
+\(\Phi_s^{-1}(x,y,q)=(x,y,b(x)/\bar q)\).
+Thus the relevant rational domain is \(|x|,|y|<1\), \(q,\bar q>0\).
+We do not assert that every state in the larger domain \(\mathcal D\)
+has positive outgoing \(q\).
+
+\begin{lemma}[Exact conjugacy, reverser and contact identities]\label{lem:rational}
+In these coordinates the propagation map and its inverse are
+\begin{align}
+ \widehat F_s(x,y,q)&=(y,z,Q),\qquad
+ z=\frac{y}{2q}-\frac{(x-1/2)B_0(y)}{q^2}-\frac12,\label{eq:Fhat}\\
+ Q&=s-d(y,z)-\frac{B_0(y)}q,\notag\\
+ \widehat F_s^{-1}(x,y,q)&=(w_-,x,B_0(x)/\bar q),\notag\\
+ w_-&=\frac{x}{2\bar q}
+       -\frac{(y+1/2)B_0(x)}{\bar q^2}+\frac12.\notag
+\end{align}
+The involution
+\begin{equation}\label{eq:reverser}
+ R_s(x,y,q)=(-y,-x,\bar q)
+\end{equation}
+satisfies \(R_s\widehat F_sR_s=\widehat F_s^{-1}\), exchanges \(q,\bar q\),
+and preserves decreasing label orientation under reversal of chains.
+For fixed \(s\), the contact form \(\omega=dq+(x-1/2)\,dy\) satisfies
+\begin{equation}\label{eq:contact}
+ \widehat F_s^*\omega=\frac{B_0(y)}{q^2}\omega,\qquad
+ R_s^*\omega=-\omega,\qquad
+ \det D\widehat F_s=\left(\frac{B_0(y)}{q^2}\right)^2.
+\end{equation}
+\end{lemma}
+\begin{proof}
+Substitute \(v=q/b(y)\) in \eqref{eq:F}. At its image the complementary
+coordinate is \(B_0(y)/q\); solving the resulting equations gives both
+inverse identities. The equality \(d(-y,-x)=d(x,y)\) then proves
+\eqref{eq:reverser}. For the contact calculation,
+\[
+ dQ+(y-1/2)\,dz
+ =\left(-(z+1/2)+\frac{y}{2q}\right)dy+\frac{B_0(y)}{q^2}\,dq;
+\]
+the formula for \(z\) makes its \(dy\) coefficient
+\((x-1/2)B_0(y)/q^2\). Differentiation also gives the stated determinant.
+Appendix~\ref{app:symbolic} specifies the exact polynomial-cancellation
+checks, including comparison with the implemented map and Jacobian.
+\end{proof}
+
+Reversal takes the intrinsic positive unstable tail to the intrinsic
+negative stable tail. This describes the second tail as a set; it does not
+assume that a given orbit meets its own reflection.
+
+\subsection{An exactly defined analytic tail}
+Put
+\begin{align}
+ G(t)&=\frac{(2t-1)(t+1)}{2(2t+1)},&
+ p_t&=(t,t,G(t)),\label{eq:G}\\
+ A(t)&=(t+1)(2t-1)^2,&
+ C(t)&=(1-t)(2t+1)^2,&
+ D(t)&=4t^2(4t^2-1),\notag\\
+ \mu(t)&=\frac{D(t)+\sqrt{D(t)^2-4A(t)C(t)}}{2A(t)},&
+ \rho(t)&=\frac{C(t)}{A(t)}.\label{eq:mu}
+\end{align}
+At \(p_t\), the characteristic polynomial is
+\[
+ (\xi-\rho)\bigl(\xi^2-(D/A)\xi+\rho\bigr).
+\]
+Thus its eigenvalues are \(\mu,\rho,\rho/\mu\), with
+\(\mu>1\) and \(0<\rho,\rho/\mu<1\) on \(T\). Direct cancellation gives
+\(G(t)/b(t)=r(t)\), so this is the same positive outer fixed point.
+
+Define \(P(t,\zeta)\) as the analytic invariant germ specified by
+\begin{equation}\label{eq:germ}
+\begin{gathered}
+ P(t,0)=p_t,\qquad P_\zeta(t,0)=(-1/\mu,-1,t-1/2),\\
+ P(t,\mu\zeta)=\widehat F_{\sigma(t)}(P(t,\zeta)).
+\end{gathered}
+\end{equation}
+The normalization fixes the phase scale; it is part of the exact definition
+of the scalar residual, not a fitted numerical convention.
+
+\begin{certificate}[Analytic-germ enclosure]\label{cert:local}
+Let \(T^\Box\) be the closed outward interval specified in
+Appendix~\ref{app:intervalspec}, which contains \([a(L),a(U)]\).
+On a complex parameter rectangle of half-width \(10^{-5}\) about its
+midpoint and on the phase disk of radius \(r_0=0.01\), the degree-36
+coefficient recursion for \eqref{eq:germ} has a unique analytic correction.
+The degree-48 recursion encloses the same germ. With the sup norm on its
+three coordinates, the corrections satisfy respectively
+\[
+ \|P-P_{36}\|<3.414\times10^{-47},\qquad
+ \|P-P_{48}\|<8.334\times10^{-63}.
+\]
+The parameter margin exceeds \(9.996\times10^{-6}\); division denominators
+are separated from zero. The contraction factors are less than
+\(6.891\times10^{-27}\) and \(4.409\times10^{-36}\), respectively.
+The exact inequalities, coefficient boxes and margins are the outputs of
+the local certificates specified in Appendix~\ref{app:intervalspec}.
+\end{certificate}
+\begin{proof}[Analytic implication of the certificate]
+Write \(P_N=\sum_{n=0}^Nc_n(t)\zeta^n\). Once \(c_0,c_1\) are fixed by
+\eqref{eq:germ}, set the trial coefficient \(c_n\) to zero and compute
+\(b_n=[\zeta^n]\widehat F_{\sigma(t)}(P_{<n})\). Then
+\[
+ (\mu^n\Id-J)c_n=b_n,\qquad
+ J=D\widehat F_{\sigma(t)}(p_t),\qquad n\ge2.
+\]
+The spectral separation makes these equations unique; interval Cramer's
+rule additionally rejects a determinant enclosure containing zero.
+This recursion is regenerated over the complex rectangle, with the
+positive-real-part square-root branch explicitly certified.
+
+Let \(R_0=0.2\) and
+\(D_N(\zeta)=\widehat F_{\sigma(t)}(P_N(\zeta/\mu))-P_N(\zeta)\).
+The first \(N+1\) coefficients of \(D_N\) vanish. A coefficient majorant
+bounds its norm by \(M\) on \(|\zeta|\le R_0\); hence on the smaller disk
+\[
+ \|D_N\|\le
+ \delta_N:=M\frac{(r_0/R_0)^{N+1}}{1-r_0/R_0}.
+\]
+For analytic corrections vanishing to order \(N+1\), Schwarz's estimate
+gives \(\|e(\zeta/\mu)\|\le\|e\|/m^{N+1}\), where the certified lower
+bound is \(m>5.8365\). An enclosed Jacobian row-sum norm \(L_F\) gives
+the contraction factor \(\kappa=L_F/m^{N+1}\) for the correction map
+\[
+ (\mathcal T_N e)(t,\zeta)=
+ \widehat F_{\sigma(t)}
+ \bigl(P_N(t,\zeta/\mu(t))+e(t,\zeta/\mu(t))\bigr)-P_N(t,\zeta).
+\]
+It preserves the required vanishing order by the coefficient equations.
+The finite gates are
+\(\kappa<1/2\) and \(\delta_N+\kappa\epsilon_N\le\epsilon_N\).
+They make the correction map a self-map and contraction on the ball of
+radius \(\epsilon_N\). Banach's theorem yields the exact analytic germ;
+conjugation and uniqueness give reality on real arguments.
+
+Cauchy estimates give parameter and phase derivative errors bounded by
+\(\epsilon_N/\Delta_t\) and \(\epsilon_N/(r_0-|\zeta|)\). These errors
+are added before chart propagation. All subsequent interval statements
+therefore concern \(P\), not only its polynomial truncation.
+The germ is injective since \(y_\zeta(t,0)=-1\), and backward iteration
+divides its phase by \(\mu\). Its tangent and backward convergence, together
+with Lemma~\ref{lem:tails}, identify it with the same intrinsic unstable
+manifold. Its negative phase side has \(x-y<0\) near zero and cannot
+represent a decreasing outer tail. The positive side does.
+Finally the two degrees have identical uniquely determined Taylor
+coefficients at every order; their analytic germs and valid continuations
+coincide.
+\end{proof}
+
+The contact relation has a useful exact consequence. For
+\(f(\zeta)=\omega(P_\zeta(\zeta))\), invariance gives
+\[
+ f(\zeta)=\frac{B_0(y(\zeta/\mu))}{q(\zeta/\mu)^2\mu}
+                f(\zeta/\mu).
+\]
+The multiplier at zero is \(\rho/\mu<1\). Iteration and boundedness imply
+\(f=0\) on a small germ, and analytic continuation through valid iterates
+gives
+\begin{equation}\label{eq:contacttangent}
+ q_\zeta=(1/2-x)y_\zeta.
+\end{equation}
+This identity is proved analytically, rather than inferred from a small
+numerical defect.
+
+\subsection{Completeness of the two-phase domain}
+Define the propagated chart
+\begin{equation}\label{eq:W}
+ W(t,\zeta)=\widehat F_{\sigma(t)}^{\,5}P(t,\zeta)
+             =(x(t,\zeta),y(t,\zeta),q(t,\zeta)),
+ \quad
+ \zeta_a=0.000078125,\quad \zeta_b=0.0025.
+\end{equation}
+The phase interval is generated from \(r_0/128,r_0/4\), and the iterate
+count is the first nonnegative count for which the right endpoint has
+strictly negative \(x\). The frozen computation gives five.
+
+\begin{certificate}[Complete chart geometry]\label{cert:geometry}
+For all \(t\in T^\Box\), \(\zeta\in[0,\zeta_b]\), and all iterates
+\(0,\ldots,5\), the analytic chart obeys \(|x|,|y|<1\),
+\(q,\bar q>0\), and \(x_\zeta,y_\zeta<0\). At the two envelope endpoints,
+\[
+ y(t,\zeta_a)>0,\quad x(t,\zeta_b)<0,\quad
+ x(t,\zeta_a)+y(t,\zeta_b)>0.
+\]
+The geometry certificate covers the closed phase interval with 14 leaves.
+Every leaf contains enclosures for each intermediate iterate; its parameter
+domain is the whole \(T^\Box\).
+\end{certificate}
+The certificate is a finite interval statement about the corrected chart
+of Certificate~\ref{cert:local}. Its verification checks the signs of
+interval endpoints and exact joins in the subdivision tree
+(Appendix~\ref{app:intervalspec}).
+
+\begin{lemma}[All intrinsic matches enter the phase envelope]\label{lem:coverage}
+Every match in \(\mathcal M_s\), after \(\Phi_s\), satisfies
+\begin{equation}\label{eq:independentmatch}
+ W(t,\zeta)=R_{\sigma(t)}W(t,\eta),\qquad
+ t=a(s),\quad (\zeta,\eta)\in[\zeta_a,\zeta_b]^2.
+\end{equation}
+The phases are independent. This closed product covers the canonical
+exact-zero crossing representatives.
+\end{lemma}
+\begin{proof}
+The functional equation gives
+\[
+ \widehat F_{\sigma(t)}W(t,\zeta/\mu)=W(t,\zeta),\qquad
+ x(t,\zeta)=y(t,\zeta/\mu).
+\]
+Since \(y\) decreases strictly and \(\mu>1\), \(x>y\) for every positive
+phase. The same identity applies to each earlier iterate. Certificate
+\ref{cert:geometry} thus proves validity and decreasing orientation on
+the entire positive propagated chart.
+
+There are unique zeros \(\zeta_y,\zeta_x\in(\zeta_a,\zeta_b)\) of
+\(y,x\), and scaling gives \(\zeta_x=\mu\zeta_y\). The precise source
+crossing domain is \((\zeta_y,\zeta_x]\). Local capture identifies any
+intrinsic decreasing outer tail with a positive phase of \(P\), which can
+be made arbitrarily small by moving backward. Successive steps multiply
+the phase by \(\mu\). A first step past \(\zeta_b\) cannot occur before
+crossing: its preceding phase would exceed
+\(\zeta_b/\mu>\zeta_y\), where \(y\) is already negative. Thus the first
+crossing lies in \((\zeta_y,\mu\zeta_y]\), with every preceding iterate
+certified. Strict decrease precludes a second crossing. This also rules
+out an excursion outside the certified chart before the representative.
+
+Apply the same reasoning independently to the reversed stable tail.
+Reversal exchanges the positive \(q,\bar q\) coordinates and preserves
+validity and decreasing orientation. If the canonical representative
+has \(x=0>y\), its reflection has positive first label and second label
+zero. Accordingly the reflected target domain is
+\([\zeta_y,\zeta_x)\), whereas the source domain is
+\((\zeta_y,\zeta_x]\). Both lie in the closed product used in
+\eqref{eq:independentmatch}. No exact-zero state is lost.
+\end{proof}
+
+\input{sections/06_projected_scalar}

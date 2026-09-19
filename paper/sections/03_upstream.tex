@@ -1,0 +1,118 @@
+\section{Canonical upstream reduction}\label{sec:upstream}
+\subsection{A certified parameter interval}
+\begin{proposition}[Finite certificates for the initial interval]\label{prop:R1}
+With the exact rationals \(L,U\) of Theorem~\ref{thm:main},
+\begin{equation}\label{eq:R1}
+ L<\St\le U.
+\end{equation}
+\end{proposition}
+\begin{proof}
+The lower certificate reconstructs six rational orthogonal projectors on
+\(\CC^{499}\) and a nonzero rational Schmidt vector. The exact circle
+identities for all 498 adjacent block parameters make the blocks projective.
+Dividing their direct Bell contraction by the positive squared norm gives a
+rational value \(v\) satisfying
+\[
+ 0.2508753845139765354\le v
+ <0.2508753845139765355.
+\]
+It is an actual finite tensor value, so \(L<v\le\St\).
+
+For the upper bound, let \(\mathbf w\) be the column of 244 reduced words of
+total length at most four in the six involutions of
+\eqref{eq:involutions}. Words are reduced using adjacent-square cancellation
+within each party and commutation across parties only. The upper certificate
+constructs a rational positive semidefinite \(244\times244\) matrix \(Y\)
+and checks the noncommutative polynomial identity
+\begin{equation}\label{eq:upperidentity}
+ \frac{2501750771}{500000000}I-\mathsf B
+       =\mathbf w^*Y\mathbf w.
+\end{equation}
+The positivity check consists of 183 positive exact leading principal
+determinants of five integer blocks, followed by a positive congruence.
+Expansion of all 59,536 ordered word products has zero residual at all
+8,452 coefficient positions. Evaluating the identity in any finite tensor
+strategy and any vector gives a nonnegative right-hand expectation.
+Equation~\eqref{eq:involutions} therefore gives
+\[
+ \Bell\le \frac14\left(\frac{2501750771}{500000000}-4\right)I
+       =\frac{501750771}{2000000000}I=UI.
+\]
+This constant is uniform in the finite dimensions, so it bounds their
+supremum. Appendix~\ref{app:bounds} specifies the rational inputs, block
+matrices, reconstruction and acceptance predicates. No numerical solver
+output, hierarchy convergence theorem or symmetry-completeness assertion is
+needed for this operator implication.
+\end{proof}
+
+\subsection{Precisely restricted external premises}
+Put
+\begin{equation}\label{eq:coefficients}
+ w(c)=\sqrt{1-c^2},\qquad b(c)=\frac{w(c)}2,\qquad
+ d(x,y)=xy+\frac{x-y}{2}-1.
+\end{equation}
+For a finite path \(\gamma=(\gamma_0,\ldots,\gamma_m)\) with
+\(\gamma_0,\gamma_m\in\{-1,1\}\) and the remaining labels in
+\([-1,1]\), define
+\begin{equation}\label{eq:J}
+ (J_m(\gamma))_{ii}=d(\gamma_{i-1},\gamma_i),\qquad
+ (J_m(\gamma))_{i,i+1}=b(\gamma_i),
+ \qquad q^*=\sup_{m,\gamma}\lambda_{\max}(J_m(\gamma)).
+\end{equation}
+The matrices are real symmetric; unspecified entries vanish.
+
+\begin{premise}[Coladangelo v1]\label{prem:Coladangelo}
+For the functional \eqref{eq:bell} and the number \(q^*\) in
+\eqref{eq:J}, we use exactly the following three source interfaces:
+\begin{enumerate}
+\item Theorem 7.1 of~\cite{Coladangelo2026v1} (p.~24, (33)--(34):
+there is a finite, nonnegative, concave function
+\(\mathfrak h:[-1,1]\to[0,\infty)\) such that, on the closed intervals,
+\begin{equation}\label{eq:storage}
+ \mathfrak h(y)+d(x,y)+\mathfrak h(-x)\le q^*,\qquad
+ \mathfrak h(z)\mathfrak h(-z)\ge b(z)^2.
+\end{equation}
+\item The finite-dimensional projective tensor restriction of Theorem 7.2
+of that source (p.~24): every normalized strategy in
+Definition~\ref{def:St} has value at most \(q^*\).
+\item Proposition 10.9 of that source (pp.~70--71): there are finite paths
+\(1=\gamma^{(n)}_0\ge\cdots\ge\gamma^{(n)}_{m_n}=-1\)
+whose largest Jacobi eigenvalues tend to \(q^*\).
+\end{enumerate}
+\end{premise}
+These are three consumed interfaces from one source, with shared proof
+ancestry. In particular the upper-bound theorem uses the scalar-certificate
+theory. They are not three independent external confirmations. No global
+differentiability or strict concavity of \(\mathfrak h\), and no classification of its
+entire equality graph, is part of the premise. The source's broader
+representation statements are not imported.
+
+\begin{proposition}[Finite realization and value identification]\label{prop:qstar}
+Every largest eigenvalue in \eqref{eq:J} is realized by a finite-dimensional
+projective tensor strategy for \eqref{eq:bell}. Consequently \(q^*=\St\).
+Moreover for every bilateral sequence \(c_j\in[-1,1]\), the bounded
+self-adjoint Jacobi operator
+\begin{equation}\label{eq:H}
+ (H(c)f)_j=b(c_j)f_{j-1}+d(c_j,c_{j+1})f_j+b(c_{j+1})f_{j+1}
+\end{equation}
+satisfies \(H(c)\le\St I\).
+\end{proposition}
+\begin{proof}
+Appendix~\ref{app:realization} constructs the six projectors explicitly by
+alternating two-dimensional blocks. On
+\(\sum_i v_i e_i\otimes e_i\), the Bell expectation is exactly
+\(v^TJ_m(\gamma)v\). A real unit top eigenvector therefore proves
+\(q^*\le\St\). External premise~\ref{prem:Coladangelo}(2) proves the reverse
+inequality in precisely the same finite projective tensor class.
+
+On \([-1,1]^2\), \(-3\le d\le0\), since its four corner values are
+\(0,-1,-3,0\) and bilinear interpolation has nonnegative weights. Also
+\(0\le b\le1/2\), hence \(\|H(c)\|\le4\). For any finitely supported
+real \(f\), retain all labels incident on its support, add a zero-amplitude
+vertex at either end, and choose the two new outer labels in \(\{-1,1\}\).
+The resulting finite path has the same Rayleigh numerator. Its value is at
+most \(q^*\|f\|^2\). Density and boundedness extend the inequality to
+\(\ell^2(\ZZ)\); real and imaginary parts give the complex version. This
+comparison permits arbitrary finite label changes, with no monotonicity
+constraint.
+\end{proof}

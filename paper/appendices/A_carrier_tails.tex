@@ -1,0 +1,202 @@
+\subsection{Equality geometry and exclusion of plateaux}
+The function \(\mathfrak h\) in \eqref{eq:storage} is bounded, since setting
+\(x=0\) gives \(\mathfrak h(y)\le s+1+y/2\); it is continuous in the interior
+by concavity. Absolute convergence allows the deficit identity
+\begin{align}
+ 0={}&s\|\lambda\|^2-Q(c)\label{eq:deficits}\\
+ ={}&\sum_j[s-d(c_j,c_{j+1})-\mathfrak h(c_{j+1})-\mathfrak h(-c_j)]\lambda_j^2\notag\\
+ &+\sum_j[\mathfrak h(c_j)\lambda_{j-1}^2+\mathfrak h(-c_j)\lambda_j^2
+                  -2b(c_j)\lambda_{j-1}\lambda_j].\notag
+\end{align}
+Every summand is nonnegative. For an edge, this follows by completing
+a square and using \(\mathfrak h(c_j)\mathfrak h(-c_j)\ge b(c_j)^2\). Since all amplitudes
+are positive, equality forces
+\begin{equation}\label{eq:saturation}
+ \begin{gathered}
+ \mathfrak h(c_{j+1})+d(c_j,c_{j+1})+\mathfrak h(-c_j)=s,\\
+ \mathfrak h(c_j)\mathfrak h(-c_j)=b(c_j)^2,\qquad \mathfrak h(c_j)=b(c_j)u_j .
+ \end{gathered}
+\end{equation}
+
+Here differentiability at saturated labels must be proved rather than
+assumed. If \(t\in(-1,1)\) and \(\mathfrak h(t)\mathfrak h(-t)=b(t)^2\), both values of
+\(\mathfrak h\) are positive. Concavity gives finite one-sided derivatives
+\(\mathfrak h'_-\ge \mathfrak h'_+\) at both labels. For \(p(z)=\mathfrak h(z)\mathfrak h(-z)\),
+\[
+ p'_-(t)=\mathfrak h'_-(t)\mathfrak h(-t)-\mathfrak h(t)\mathfrak h'_+(-t),\qquad
+ p'_+(t)=\mathfrak h'_+(t)\mathfrak h(-t)-\mathfrak h(t)\mathfrak h'_-(-t).
+\]
+Thus \(p'_--p'_+\) is the sum of two nonnegative derivative jumps
+with positive weights. But \(p-b^2\ge0\) has a zero at \(t\), so
+\(p'_-(t)\le-t/2\le p'_+(t)\). All inequalities are equalities, and
+both jumps vanish. Consequently \(\mathfrak h\) is differentiable at \(t,-t\).
+Varying the two arguments at a saturated pair \((x,y)\) gives
+\begin{equation}\label{eq:predsucc}
+ x=1/2-\mathfrak h'(y),\qquad y=\mathfrak h'(-x)-1/2.
+\end{equation}
+These formulas determine the predecessor and successor uniquely
+among saturated equality pairs.
+
+If \(c_j=c_{j+1}=t\), \eqref{eq:predsucc} propagates this equality
+to each adjacent pair and hence to the entire sequence. For constant
+labels the quadratic form has upper bound
+\[
+ t^2-1+w(t)=-w(t)^2+w(t)\le1/4
+\]
+on unit vectors, by Cauchy--Schwarz. This contradicts \(s>1/4\).
+Therefore \(c_j>c_{j+1}\) everywhere.
+
+\subsection{Interior tail limits}
+Strict decrease gives distinct limits \(t_-,t_+\in[-1,1]\).
+To exclude boundary limits before assuming ratio convergence, set
+\(\mathsf A_j=w(c_j)u_j\) and \(\mathsf B_j=w(c_j)/u_j\).
+Equation \eqref{eq:labelstationarity} and the Jacobi equation give
+\begin{align}
+ (c_{j+1}+1/2)\mathsf A_j+(c_{j-1}-1/2)\mathsf B_j&=c_j,
+ &\mathsf A_j\mathsf B_j&=1-c_j^2,\label{eq:AB}\\
+ \mathsf B_j+\mathsf A_{j+1}&=2(s-d(c_j,c_{j+1})).&&\notag
+\end{align}
+If a tail tends to \(+1\), the first equation bounds both positive
+quantities on that tail. Their possible subsequential limits are
+\((2/3,0)\) and \((0,2)\). If a tail tends to \(-1\), multiply the
+first equation by \(-1\); the possible pairs are \((2,0)\) and
+\((0,2/3)\). Simultaneous convergent subsequences at neighboring indices,
+substituted in the second equation with \(d\to0\), would give
+\(s\in\{0,1/3,1,4/3\}\). This contradicts the initial interval.
+Hence both limits are interior, and the labels lie in a fixed compact
+subinterval of \((-1,1)\).
+
+\begin{lemma}[Positive Jacobi tail ratios]\label{lem:ratios}
+Suppose a positive right-tail sequence satisfies
+\[
+ a_nf_{n-1}+d_nf_n+a_{n+1}f_{n+1}=sf_n,\qquad
+ a_n\to a>0,\quad d_n\to d,\quad K=(s-d)/a>2.
+\]
+If it is square summable, then
+\[
+ \frac{f_n}{f_{n-1}}\longrightarrow
+ \frac{K-\sqrt{K^2-4}}2<1.
+\]
+For a square-summable left tail the forward ratio tends to the
+reciprocal root, which exceeds one.
+\end{lemma}
+\begin{proof}
+Positivity gives, for \(v_n=f_n/f_{n-1}\),
+\[
+ v_n>\frac{a_n}{s-d_n},\qquad
+ v_{n+1}<\frac{s-d_n}{a_{n+1}}.
+\]
+Thus late ratios stay in a compact positive interval. The recurrence is
+\(v_{n+1}=F(v_n)+o(1)\), uniformly there, with \(F(v)=K-1/v\).
+As \(F\) is increasing and continuous, the liminf and limsup are each
+fixed points of \(F\). These are \(\rho_-<1<\rho_+\).
+They cannot be different: for any \(m\in(\rho_-,\rho_+)\),
+\(F(m)>m\), and sufficiently small late errors make crossing above
+\(m\) irreversible. A limsup of \(\rho_+\) would force such a crossing,
+contradicting liminf \(\rho_-\). The ratio therefore converges.
+Square summability excludes \(\rho_+\), since ratios eventually bounded
+below by a constant greater than one force growth. Reverse the sequence
+for the left tail.
+\end{proof}
+
+For a carrier tail with label limit \(t\), the limiting coefficients
+are \(a=w(t)/2\), \(d=t^2-1\). The condition \(K>2\) follows from
+\[
+ s>1/4\ge t^2-1+w(t).
+\]
+Lemma~\ref{lem:ratios} gives full positive finite ratio limits
+\(u_->1\) on the left and \(u_+<1\) on the right.
+
+\subsection{Tail elimination and exclusion of the extraneous branch}
+Passing to the now justified limits in the two stationary equations,
+write the label and ratio as \(t,r\), with \(w=\sqrt{1-t^2}>0\):
+\begin{equation}\label{eq:tailequations}
+ \frac w2(r+r^{-1})+t^2-1=s,\qquad
+ (t+1/2)r+(t-1/2)r^{-1}=t/w.
+\end{equation}
+Putting \(h_0=s-t^2\) gives
+\[
+ r+r^{-1}=\frac{2(h_0+1)}w,\qquad
+ r-r^{-1}=-\frac{2t(2h_0+1)}w.
+\]
+Their squared difference equals four, so
+\begin{equation}\label{eq:tailpolynomial}
+ 0=(s-t^2)\{4t^4-(4s+5)t^2+s+2\}.
+\end{equation}
+The coefficient identity is checked exactly, without inserting a
+preferred root branch.
+
+In \eqref{eq:Hessian} take a finite variation
+\(\delta_j=z_j/\sqrt{\lambda_{j-1}\lambda_j}\). Its finitely many
+entries are finite even far out a small-amplitude tail, so a sufficiently
+small perturbation parameter keeps the labels interior. Twice the
+resulting form is
+\[
+ -\sum_j w(c_j)^{-3}z_j^2
+       +2\sum_j\sqrt{u_j/u_{j+1}}\,z_jz_{j+1}\le0.
+\]
+Choose \(z=1\) on five consecutive sites and translate them down either
+tail. The form tends to \(8-5/(1-t^2)^{3/2}\).
+On \(s=t^2\), this is strictly positive, since
+\[
+ (1-s)^3>(37/50)^3>25/64=(5/8)^2.
+\]
+The last comparison is exact rational arithmetic. Sufficiently far
+translated variations then contradict the nonpositive form. Hence
+the branch \(s=t^2\) is excluded.
+
+\subsection{Outer rather than inner or mixed tails}
+The remaining polynomial \(P_s(z)=4z^2-(4s+5)z+s+2\) satisfies
+\[
+ P_s(1/4)=1,\qquad P_s(3/4)=1/2-2s<0,\qquad P_s(1)=1-3s>0.
+\]
+It has two roots with
+\[
+ 1/4<\beta(s)^2<3/4<a(s)^2<1,\qquad
+ \beta(s)=\sqrt{\frac{4s+5-\sqrt{16s^2+24s-7}}8}.
+\]
+Adding the sum and difference equations above and using
+\[
+ (2t+1)[(s+1-t^2)-t(2s+1-2t^2)]-(1+t)(2t-1)=P_s(t^2)
+\]
+gives \(r=r(t)\) as in \eqref{eq:r}. All denominators are nonzero
+because the root magnitudes exceed \(1/2\). Moreover
+\[
+ r(t)^2-1=\frac{2t(4t^2-3)}{(1-t)(2t+1)^2},\qquad
+ r(-t)=r(t)^{-1}.
+\]
+The left ratio \(>1\) permits labels \(a,-\beta\), and the right
+ratio \(<1\) permits labels \(-a,\beta\).
+
+Root ordering alone does not remove the same-sign pairs
+\((a,\beta)\) and \((-\beta,-a)\). For this step use the scalar
+certificate. Taking limits in \eqref{eq:saturation} gives
+\[
+ \mathfrak h(t)+\mathfrak h(-t)+t^2-1=s,\quad
+ \mathfrak h(t)\mathfrak h(-t)=b(t)^2,\quad \mathfrak h(t)=b(t)r(t).
+\]
+The constant pair with both signs reversed also saturates
+\eqref{eq:storage}. Differentiability and \eqref{eq:predsucc}
+then imply, at either positive magnitude \(m=|t|\),
+\[
+ \mathfrak h'(m)=1/2-m,\qquad
+ \mathfrak h(m)=f_0(m):=\frac{(1+m)(2m-1)}{2(2m+1)}
+                 =\frac m2-\frac1{2(2m+1)}.
+\]
+If both magnitudes \(a>\beta>1/2\) occurred, the supporting line
+at \(\beta\) would give
+\[
+ \mathfrak h(a)\le \mathfrak h(\beta)+(1/2-\beta)(a-\beta)<\mathfrak h(\beta).
+\]
+But
+\[
+ f_0(a)-f_0(\beta)
+ =(a-\beta)\left(\frac12+\frac1{(2a+1)(2\beta+1)}\right)>0,
+\]
+a contradiction. Mixed magnitudes are impossible. Of the two
+remaining equal-magnitude pairs, \((-\beta,\beta)\) is increasing,
+so strict decrease leaves precisely \((a,-a)\).
+The already established ratio limits are consequently
+\(r(a)>1\) and \(r(-a)<1\). This proves all of
+\eqref{eq:carrierconditions} at \(s=\St\), completing
+Theorem~\ref{thm:R0}.

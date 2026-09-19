@@ -1,0 +1,151 @@
+\section{Local dynamics and full-state matching}\label{sec:matching}
+\subsection{Outer fixed points and hyperbolicity}
+Use the outer coordinate
+\begin{equation}\label{eq:sigma}
+ t=a(s),\qquad \sigma(t)=\frac{4t^4-5t^2+2}{4t^2-1},\qquad
+ T=a(I)=(a(L),a(U)].
+\end{equation}
+The equation \(s=\sigma(t)\) is
+\(4t^4-(4s+5)t^2+s+2=0\); its larger squared root is \eqref{eq:a}.
+On this branch \(\sqrt3/2<t<1\), and
+\begin{equation}\label{eq:sigmaprime}
+ \sigma'(t)=\frac{2t(4t^2-3)(4t^2+1)}{(4t^2-1)^2}>0.
+\end{equation}
+Exact comparison through \(\sigma\) gives
+\(0.8782729451808<a(s)<0.87827295218\) on all of \(I\), including its
+upper endpoint. This is an enclosure of the full initial domain, not a
+restriction to a neighborhood of a suspected root.
+
+\begin{premise}[Real-analytic hyperbolic local manifolds]\label{prem:stable}
+A real-analytic local diffeomorphism at a hyperbolic fixed point has analytic
+local stable and unstable manifolds tangent to the corresponding invariant
+subspaces. In sufficiently small admissible neighborhoods their local
+convergence sets capture the appropriate forward and backward convergent
+orbits; the manifold germs are unique. We use the standard finite-dimensional
+local theorem, with analytic regularity as in~\cite{CabreFontichLlave2003},
+Theorem 1.1 and the stable/unstable specialization, and the usual local
+capture formulation~\cite{Shub1987}.
+\end{premise}
+
+\begin{lemma}[The intrinsic local tails]\label{lem:tails}
+For every \(s\in I\),
+\[
+ p_\pm(s)=(\pm a(s),\pm a(s),r(\pm a(s)))
+\]
+are valid fixed points. The positive fixed point has one unstable and two
+stable directions; the negative fixed point has one stable and two unstable
+directions. Their splittings are uniform over the closed parameter hull.
+The decreasing backward convergence set near \(p_+\) and decreasing forward
+convergence set near \(p_-\) are the corresponding one-dimensional analytic
+local tail pieces.
+\end{lemma}
+\begin{proof}
+Substitution in \eqref{eq:F} proves the fixed-point equations and
+\(r(t)r(-t)=1\). Further,
+\[
+ r(t)^2-1=\frac{2t(4t^2-3)}{(1-t)(2t+1)^2}>0.
+\]
+At \(p_+\), one eigenvalue is \(\nu=1/r(t)^2\in(0,1)\). The other two
+are the zeros of the sign-equivalent characteristic factor
+\[
+ (4t^3-3t+1)\xi^2-4t^2(4t^2-1)\xi-(4t^3-3t-1).
+\]
+Its leading and constant coefficients are positive, its root sum is
+positive, and its value at one is
+\(-2(2t^2-1)(4t^2+1)<0\). Hence its roots satisfy
+\(0<\alpha<1<\mu\). The spectrum at \(p_-\) is reciprocal.
+The determinants at the two points are respectively
+\[
+ \frac{(t-1)^2(2t+1)^4}{(t+1)^2(2t-1)^4},\qquad
+ \frac{(t+1)^2(2t-1)^4}{(t-1)^2(2t+1)^4},
+\]
+both nonzero. These are exact symbolic identities, specified in
+Appendix~\ref{app:symbolic}. Positive radicands and ratios make \(F_s\)
+analytic near the points; its nonzero determinant gives local invertibility.
+Compactness of \([a(L),a(U)]\) and continuous eigenvalue branches, none on
+the unit circle, give uniform hyperbolicity. External
+premise~\ref{prem:stable} now supplies the stated manifolds and local capture.
+\end{proof}
+
+\subsection{Intrinsic definitions and the crossing convention}
+Choose sufficiently small admissible open neighborhoods \(N_\pm\) of the
+fixed points. Define \(W^u_{s,\mathrm{loc}}\) to consist of states in
+\(N_+\) admitting a valid backward chain wholly in \(N_+\) which converges
+to \(p_+\); define \(W^s_{s,\mathrm{loc}}\) using a valid forward chain
+wholly in \(N_-\) converging to \(p_-\). Superscript \(\downarrow\)
+restricts these sets to decreasing tails. In particular it excludes the
+fixed point itself. These two tail sets are defined independently.
+
+\begin{definition}[Full-state matching]\label{def:matching}
+For \(s\in I\), define
+\begin{align*}
+ \mathcal U_s=\{X:\;&F_s^m(\xi)=X\text{ along a valid decreasing chain},\\
+ &m\ge0,\ \xi\in W^{u,\downarrow}_{s,\mathrm{loc}}\},\\
+ \mathcal V_s=\{X:\;&F_s^n(X)=\eta\text{ along a valid decreasing chain},\\
+ &n\ge0,\ \eta\in W^{s,\downarrow}_{s,\mathrm{loc}}\}.
+\end{align*}
+The integers and the two local tail points are independent. Set
+\begin{equation}\label{eq:matching}
+ \Sigma=\{(x,y,u)\in\mathcal D:x\ge0>y\},\qquad
+ \Ms=\Sigma\cap\mathcal U_s\cap\mathcal V_s,
+\end{equation}
+and \(\mathcal M=\{(s,X):s\in I,\ X\in\Ms\}\).
+All three state coordinates must agree at the join. Equality of the two
+labels alone is insufficient. The half-open crossing set chooses a
+representative of a discrete orbit; smooth transversality is not assumed.
+\end{definition}
+
+The global continuations are independent of the sufficiently small admissible
+neighborhoods. Indeed a backward tail tending to \(p_+\) eventually lies
+entirely in any second such neighborhood. An earlier point on that same tail
+represents the same global state by finitely many valid decreasing steps.
+Interchanging the neighborhoods gives equality of the source continuations;
+the forward argument gives equality of the target continuations.
+
+\begin{proposition}[Matching soundness and carrier completeness]\label{prop:bridge}
+For every \(s\in I\),
+\begin{equation}\label{eq:bridge}
+ \mathcal C_s\ne\varnothing\quad\Longleftrightarrow\quad
+ \mathcal M_s\ne\varnothing.
+\end{equation}
+Every carrier has a unique index \(k\) with \(c_k\ge0>c_{k+1}\), and its
+state there belongs to \(\Ms\). Every match reconstructs an admissible
+normalized positive carrier.
+\end{proposition}
+\begin{proof}
+Given a match, concatenate its backward and forward tails at their identical
+three-coordinate state. This produces a bilateral valid decreasing chain
+\((c_j,c_{j+1},u_j)\) with the four prescribed limits. Choose
+\(\lambda_0>0\) and impose \(\lambda_j=u_j\lambda_{j-1}\) in both
+directions. All amplitudes are positive. On the far left, ratios are bounded
+below by some \(q_->1\), so amplitudes decay geometrically when moving
+left. On the far right they are bounded above by some \(q_+<1\), so
+amplitudes decay geometrically when moving right. Thus
+\(0<\sum\lambda_j^2<\infty\), and a single scaling normalizes the vector.
+The first equation in \eqref{eq:stationarypair}, multiplied by
+\(\lambda_j/2\), gives exactly \(H(c)\lambda=s\lambda\).
+The second equation remains true at every chain step. All conditions of
+Definition~\ref{def:carrier} follow.
+
+Conversely, let \((c,\lambda)\in\Cs\). Strict decrease and the positive
+left and negative right limits imply that \(\{j:c_j\ge0\}\) is a nonempty
+initial segment of \(\ZZ\) bounded above. Its maximum \(k\) is the unique
+crossing index. If \(c_k=0\), the representative starts at that zero and
+ends at the next negative label, as required by \eqref{eq:matching}.
+The full states \(X_j=(c_j,c_{j+1},\lambda_j/\lambda_{j-1})\) tend to
+\(p_+\) and \(p_-\). Hence for some finite \(m,n\ge0\), the entire past
+of \(X_{k-m}\) lies in \(N_+\) and the entire future of \(X_{k+n}\) lies
+in \(N_-\). Local capture in Lemma~\ref{lem:tails} places these states on
+the decreasing unstable and stable pieces. Their actual carrier steps give
+\(F_s^m(X_{k-m})=X_k\) and \(F_s^n(X_k)=X_{k+n}\), with all validity
+conditions retained. Thus \(X_k\in\Ms\).
+\end{proof}
+
+\begin{proposition}[A match at the true value]\label{prop:existmatch}
+The matching set \(\mathcal M_{\St}\) is nonempty.
+\end{proposition}
+\begin{proof}
+Proposition~\ref{prop:R1} puts \(\St\) in the domain \(I\).
+Theorem~\ref{thm:R0} supplies a member of \(\mathcal C_{\St}\).
+Apply Proposition~\ref{prop:bridge} at that parameter.
+\end{proof}

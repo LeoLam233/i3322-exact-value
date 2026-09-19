@@ -1,0 +1,256 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "repository_path": "paper/AI_ASSISTANCE_DISCLOSURE.md",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/AI_ASSISTANCE_DISCLOSURE.md",
+      "sha256": "7f9eda43af458346197653e14ff1e593866b906043f2cd89fd46c12b92eac767",
+      "v0_1_1_sha256": "7f9eda43af458346197653e14ff1e593866b906043f2cd89fd46c12b92eac767",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/AI_ASSISTANCE_DISCLOSURE.md",
+      "classification": "BYTE-IDENTICAL"
+    },
+    {
+      "repository_path": "paper/appendices/A_carrier_proof.tex",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/appendices/A_carrier_proof.tex",
+      "sha256": "481c829f96aec9d91be97f850d2345466d216a057a38e6b6656b1deb070bcce0",
+      "v0_1_1_sha256": "481c829f96aec9d91be97f850d2345466d216a057a38e6b6656b1deb070bcce0",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/appendices/A_carrier_proof.tex",
+      "classification": "BYTE-IDENTICAL"
+    },
+    {
+      "repository_path": "paper/appendices/A_carrier_tails.tex",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/appendices/A_carrier_tails.tex",
+      "sha256": "c46f00a1f9bd7c562bcc5edb3697b94f7c41055f0195160982d3514183580586",
+      "v0_1_1_sha256": "c46f00a1f9bd7c562bcc5edb3697b94f7c41055f0195160982d3514183580586",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/appendices/A_carrier_tails.tex",
+      "classification": "BYTE-IDENTICAL"
+    },
+    {
+      "repository_path": "paper/appendices/B_finite_bounds.tex",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/appendices/B_finite_bounds.tex",
+      "sha256": "f3dd5860128c5cb79cbaa091ba67cced250144e375881f1e8a428b73ff06363c",
+      "v0_1_1_sha256": "f3dd5860128c5cb79cbaa091ba67cced250144e375881f1e8a428b73ff06363c",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/appendices/B_finite_bounds.tex",
+      "classification": "BYTE-IDENTICAL"
+    },
+    {
+      "repository_path": "paper/appendices/C_symbolic_certificates.tex",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/appendices/C_symbolic_certificates.tex",
+      "sha256": "94faf5fb2f0e2c5b43cf17f83db90e5e6cf88269241dcd209850b6f96ef8aa66",
+      "v0_1_1_sha256": "94faf5fb2f0e2c5b43cf17f83db90e5e6cf88269241dcd209850b6f96ef8aa66",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/appendices/C_symbolic_certificates.tex",
+      "classification": "BYTE-IDENTICAL"
+    },
+    {
+      "repository_path": "paper/appendices/D_crosswalk.tex",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/appendices/D_crosswalk.tex",
+      "sha256": "9c04735799876f64a34af3e442a91b596faa43355d09921c193d9d047570f434",
+      "v0_1_1_sha256": "9c04735799876f64a34af3e442a91b596faa43355d09921c193d9d047570f434",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/appendices/D_crosswalk.tex",
+      "classification": "BYTE-IDENTICAL"
+    },
+    {
+      "repository_path": "paper/appendices/E_audits.tex",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/appendices/E_audits.tex",
+      "sha256": "e2e26a8d2f3ba24efcf14936c0d70d9c597fbc369cd05cb9453fa9b4e0f069e9",
+      "v0_1_1_sha256": "e2e26a8d2f3ba24efcf14936c0d70d9c597fbc369cd05cb9453fa9b4e0f069e9",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/appendices/E_audits.tex",
+      "classification": "BYTE-IDENTICAL"
+    },
+    {
+      "repository_path": "paper/main.tex",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/main.tex",
+      "sha256": "e5efe2e3757a90f666b26f6973b277cd26b731a46429db06402a73413f160c16",
+      "v0_1_1_sha256": "802ebc662eaf0ddcc4e33497b2d68ba3f635bdc0f87f5b37846c8b9112c9ebad",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/main.tex",
+      "classification": "METADATA-ONLY SOURCE"
+    },
+    {
+      "repository_path": "paper/paper_v0_1_2.pdf",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/paper_v0_1_2.pdf",
+      "sha256": "81b75cd3a720ab0e2953bdbd79f70c969af5fc48ab01caa75f4522b229f51f2f",
+      "v0_1_1_sha256": "c1a6e364425a61ca8bae4e94cdf50e81f1a11b9ba3373e481747050e2b426bd0",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/paper_v0_1_1.pdf",
+      "classification": "METADATA-ONLY REBUILD"
+    },
+    {
+      "repository_path": "paper/references.bib",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/references.bib",
+      "sha256": "1044920fd9f07412b05ef4d3bf7c5fd0fbd11392c3ebb230c7afcb034d4921a8",
+      "v0_1_1_sha256": "1044920fd9f07412b05ef4d3bf7c5fd0fbd11392c3ebb230c7afcb034d4921a8",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/references.bib",
+      "classification": "BYTE-IDENTICAL"
+    },
+    {
+      "repository_path": "paper/sections/01_introduction.tex",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/sections/01_introduction.tex",
+      "sha256": "6821aaefa5cd69f2816cdaecbf474cfb9c8cbb49060a5a16a4cfd8e2f0e6f52a",
+      "v0_1_1_sha256": "6821aaefa5cd69f2816cdaecbf474cfb9c8cbb49060a5a16a4cfd8e2f0e6f52a",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/sections/01_introduction.tex",
+      "classification": "BYTE-IDENTICAL"
+    },
+    {
+      "repository_path": "paper/sections/02_normalization.tex",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/sections/02_normalization.tex",
+      "sha256": "d3be1c0123d4a4054971cb7b506684dea63ce86a6b1584c967172cd8c25fc91a",
+      "v0_1_1_sha256": "d3be1c0123d4a4054971cb7b506684dea63ce86a6b1584c967172cd8c25fc91a",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/sections/02_normalization.tex",
+      "classification": "BYTE-IDENTICAL"
+    },
+    {
+      "repository_path": "paper/sections/03_upstream.tex",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/sections/03_upstream.tex",
+      "sha256": "af82d63c63054113388dece1a5f3c426d74bbd509005f6e2cb5d7c8d2c40eb00",
+      "v0_1_1_sha256": "af82d63c63054113388dece1a5f3c426d74bbd509005f6e2cb5d7c8d2c40eb00",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/sections/03_upstream.tex",
+      "classification": "BYTE-IDENTICAL"
+    },
+    {
+      "repository_path": "paper/sections/04_carriers.tex",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/sections/04_carriers.tex",
+      "sha256": "65593126c0b011a409380ce82b3c780ab0e73602308d02bd8cb4bfd909c78141",
+      "v0_1_1_sha256": "65593126c0b011a409380ce82b3c780ab0e73602308d02bd8cb4bfd909c78141",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/sections/04_carriers.tex",
+      "classification": "BYTE-IDENTICAL"
+    },
+    {
+      "repository_path": "paper/sections/05_matching.tex",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/sections/05_matching.tex",
+      "sha256": "a05bb3e7e8c097885c873abfc236d72619e89a0f6e97bbdaa219c7a9698338b5",
+      "v0_1_1_sha256": "a05bb3e7e8c097885c873abfc236d72619e89a0f6e97bbdaa219c7a9698338b5",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/sections/05_matching.tex",
+      "classification": "BYTE-IDENTICAL"
+    },
+    {
+      "repository_path": "paper/sections/06_projected_scalar.tex",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/sections/06_projected_scalar.tex",
+      "sha256": "20c4b925f23e1e8fc53f366a299a2dae55d4153e7f5f85ea4930b88c7d3865e5",
+      "v0_1_1_sha256": "20c4b925f23e1e8fc53f366a299a2dae55d4153e7f5f85ea4930b88c7d3865e5",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/sections/06_projected_scalar.tex",
+      "classification": "BYTE-IDENTICAL"
+    },
+    {
+      "repository_path": "paper/sections/06_uniqueness.tex",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/sections/06_uniqueness.tex",
+      "sha256": "b3a8a8ca4770c39a79570601829e7d1cc0427ffbfb79cf0007dd33729f711a2e",
+      "v0_1_1_sha256": "b3a8a8ca4770c39a79570601829e7d1cc0427ffbfb79cf0007dd33729f711a2e",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/sections/06_uniqueness.tex",
+      "classification": "BYTE-IDENTICAL"
+    },
+    {
+      "repository_path": "paper/sections/07_identification.tex",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/sections/07_identification.tex",
+      "sha256": "4caeb81b859a24bd8640bcdf4d89bd5586554cda8142cc53c05f58f0b1b5a6d3",
+      "v0_1_1_sha256": "4caeb81b859a24bd8640bcdf4d89bd5586554cda8142cc53c05f58f0b1b5a6d3",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/sections/07_identification.tex",
+      "classification": "BYTE-IDENTICAL"
+    },
+    {
+      "repository_path": "paper/sections/08_enclosure.tex",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/sections/08_enclosure.tex",
+      "sha256": "f1574642689364206afdfb056585cb40884748fc923a6d9dfeb155c600f5e832",
+      "v0_1_1_sha256": "f1574642689364206afdfb056585cb40884748fc923a6d9dfeb155c600f5e832",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/sections/08_enclosure.tex",
+      "classification": "BYTE-IDENTICAL"
+    },
+    {
+      "repository_path": "paper/sections/09_reproducibility.tex",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/sections/09_reproducibility.tex",
+      "sha256": "e102e8516811c7267aaf1b81ac2d87f92a84b00c25def7d48d362bb67e037105",
+      "v0_1_1_sha256": "e102e8516811c7267aaf1b81ac2d87f92a84b00c25def7d48d362bb67e037105",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/sections/09_reproducibility.tex",
+      "classification": "BYTE-IDENTICAL"
+    },
+    {
+      "repository_path": "paper/sections/10_provenance.tex",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/sections/10_provenance.tex",
+      "sha256": "f21d8f5301bc0279c8c57a876ff5f0ae4daed1b1f3895fc7382fc85fd622934c",
+      "v0_1_1_sha256": "f21d8f5301bc0279c8c57a876ff5f0ae4daed1b1f3895fc7382fc85fd622934c",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/sections/10_provenance.tex",
+      "classification": "BYTE-IDENTICAL"
+    },
+    {
+      "repository_path": "paper/sections/11_validation.tex",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/sections/11_validation.tex",
+      "sha256": "aebf20b227dfcd2ec564fe9e778cba97f63bbdef78f24394747e2c45fb461a2d",
+      "v0_1_1_sha256": "f9c40247306c186787bae013c6ba4350c2c250688956d7f788db155b8e64f8ba",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/sections/11_validation.tex",
+      "classification": "METADATA-ONLY SOURCE"
+    },
+    {
+      "repository_path": "paper/tables/enclosure.tex",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/tables/enclosure.tex",
+      "sha256": "210ad663a5222f0fe5a373d9b9e4fa3d616d5a40d2dade69a36725013794b59b",
+      "v0_1_1_sha256": "210ad663a5222f0fe5a373d9b9e4fa3d616d5a40d2dade69a36725013794b59b",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/tables/enclosure.tex",
+      "classification": "BYTE-IDENTICAL"
+    },
+    {
+      "repository_path": "paper/tables/hashes.tex",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/tables/hashes.tex",
+      "sha256": "488e3af755c8ecc251339343faa57a82b5e3cee84ffdcc65547861a03d5626d5",
+      "v0_1_1_sha256": "488e3af755c8ecc251339343faa57a82b5e3cee84ffdcc65547861a03d5626d5",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/tables/hashes.tex",
+      "classification": "BYTE-IDENTICAL"
+    },
+    {
+      "repository_path": "paper/tools/build_paper.py",
+      "asset": "I3322_PAPER_V0_1_2.zip",
+      "member": "I3322_PAPER_V0_1_2/tools/build_paper.py",
+      "sha256": "4aeb1b42dd29225b86c7d16afc9495da899893bcada2506dc0c14ae6f8aed2a8",
+      "v0_1_1_sha256": "4aeb1b42dd29225b86c7d16afc9495da899893bcada2506dc0c14ae6f8aed2a8",
+      "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
+      "v0_1_1_member": "I3322_PAPER_V0_1_1/tools/build_paper.py",
+      "classification": "BYTE-IDENTICAL"
+    }
+  ],
+  "scope": "Current readable paper files pinned to public v0.1.2; v0.1.1 digests retained as historical source provenance. Only approved metadata/declarations and resulting PDF differ."
+}

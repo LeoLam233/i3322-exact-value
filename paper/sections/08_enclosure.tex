@@ -1,0 +1,56 @@
+\section{Certified numerical enclosure}\label{sec:enclosure}
+\begin{theorem}[Strict rational bracket]\label{thm:O8}
+For the rational numbers \(\ell,h\) displayed after Theorem~\ref{thm:main},
+\[
+ \ell<\St<h,
+\]
+with the exact width in \eqref{eq:width}.
+\end{theorem}
+\begin{proof}
+The degree-48 analytic enclosure of Certificate~\ref{cert:local}
+represents the same germ as the degree-36 global proof. It is used only
+after the global equivalence and uniqueness theorems. Put
+\(f(s)=\Res(a(s))\); then
+\[
+ f'(s)=\frac{\Res'(a(s))}{\sigma'(a(s))}>0.
+\]
+The exact directed interval for this quotient is recorded in
+\pkg{scalar.json}. Starting at the full closed interval \([L,U]\),
+the certificate performs 13 inclusions
+\begin{equation}\label{eq:newton}
+ J_{k+1}\supseteq
+ J_k\cap\left(m_k-\frac{[f](m_k)}{[f']([L,U])}\right),\qquad
+ m_k\in J_k.
+\end{equation}
+Every recorded output lies inside its input and strictly shrinks it.
+The mean value theorem shows that the root remains in each exact
+intersection; rational verification checks that the stored rounded
+output contains that intersection. The last output is inflated by
+exactly \(10^{-52}\) on each side to give \([\ell,h]\).
+
+The endpoint residual enclosures, generated for \(f\) at these
+\emph{\(s\)-valued} endpoints, have the following outward rational
+summaries (the full decimal intervals are in \pkg{root.json}):
+\begin{align*}
+ [f](\ell)&\subseteq[-5.720120,-5.720084]\times10^{-51},\\
+ [f](h)&\subseteq[5.804107,5.804143]\times10^{-51}.
+\end{align*}
+Their strict signs and continuity place a zero strictly between
+\(\ell,h\). Theorem~\ref{thm:O6} and scalar equivalence identify it with
+the unique global matching parameter; Theorem~\ref{thm:O7} identifies
+that parameter with \(\St\). Exact integer subtraction proves
+\eqref{eq:width}, and rational comparisons prove \(L<\ell<h<U\).
+\end{proof}
+
+The finite check of \eqref{eq:newton} uses integer/Fraction arithmetic,
+independently of the interval code's midpoint helper: each recorded center
+is verified as an exact rational point inside its own input. The
+residual and derivative enclosures still depend on the analytic-germ
+proof and the interval arithmetic. Checking the final rational arithmetic
+alone would not establish those analytic enclosures.
+
+Scouting suggested computational centers and a central phase interval.
+Proof acceptance instead uses rational identities, directed interval
+bounds, full covers and strict signs. Historical root digits, stored
+success flags and agreement of floating-point optimizers supply no
+premise of this enclosure.

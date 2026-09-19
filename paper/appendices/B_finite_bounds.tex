@@ -1,0 +1,122 @@
+\section{Finite rational bound certificates}\label{app:bounds}
+The rational objects are \pkg{lower_d499.json} and
+\pkg{upper_level4.json} in the canonical R1 component. They originate
+in the immutable v2.0.0 release~\cite{Mghirbi2026data}; the original
+license and attribution travel inside the supplied input archive.
+The following specifies exactly what their independent checker proves.
+
+\subsection{Lower witness}
+The first object contains rational circle pairs \((c_i,s_i)\),
+\(1\le i<499\), and rational amplitudes \(\lambda_i\),
+\(1\le i\le499\). Set \(c_0=1,c_{499}=-1\). The finite predicates are
+\(c_i^2+s_i^2=1\), \(s_i>0\), and \(N=\sum_i\lambda_i^2>0\).
+Define
+\[
+ R_i^\pm=\frac12\begin{pmatrix}1-c_i&\pm s_i\\
+                         \pm s_i&1+c_i\end{pmatrix},\qquad
+ T_i^\pm=\frac12\begin{pmatrix}1+c_i&\pm s_i\\
+                         \pm s_i&1-c_i\end{pmatrix},\qquad
+ J=\frac12\begin{pmatrix}1&1\\1&1\end{pmatrix}.
+\]
+The projectors in the target labels are the following direct sums.
+\begin{center}
+\begin{tabular}{lll}
+Operator & Two-dimensional blocks & Singleton\\ \hline
+\(A_1,A_2\)&\(R_i^-,R_i^+\), even \(i=2,\ldots,498\)&\(1\) on \(e_1\)\\
+\(A_3\)&\(J\), odd \(i=1,\ldots,497\)&\(1\) on \(e_{499}\)\\
+\(B_1,B_2\)&\(T_i^-,T_i^+\), odd \(i=1,\ldots,497\)&\(0\) on \(e_{499}\)\\
+\(B_3\)&\(J\), even \(i=2,\ldots,498\)&\(1\) on \(e_1\)
+\end{tabular}
+\end{center}
+Every block is symmetric and idempotent by the circle relation. The
+checker additionally multiplies all six full sparse \(499\times499\)
+matrices, checking symmetry and idempotency at every entry.
+The state is \(N^{-1/2}\sum_i\lambda_ie_i\otimes e_i\).
+For real matrices its expectation satisfies
+\[
+ \langle P\otimes Q\rangle
+   =N^{-1}\sum_{i,j}\lambda_i\lambda_jP_{ij}Q_{ij},\qquad
+ \langle P\otimes I\rangle=N^{-1}\sum_i\lambda_i^2P_{ii}.
+\]
+Direct contraction of \eqref{eq:bell}, including all zero coefficients,
+is compared with the tridiagonal formula. The result is
+\[
+ v=N^{-1}\left(\sum_i d(c_{i-1},c_i)\lambda_i^2+
+                       \sum_{i=1}^{498}s_i\lambda_i\lambda_{i+1}\right).
+\]
+The reduced numerator and denominator have 5,851 and 5,852 decimal
+digits and are stored in \pkg{certificate/lower_receipt.json}.
+Exact integer comparison, without a square-root approximation to
+the state normalization, proves the interval for \(v\) in
+Proposition~\ref{prop:R1}.
+
+\subsection{Upper polynomial identity}
+Generate all reduced single-party words in three involutions up to
+length four, pair Alice and Bob words with total length at most four,
+and order the 244 pairs by length and then lexicographically.
+Adjacent equal letters cancel, and cross-party letters commute.
+Adjoints reverse the order within each party. These reductions are
+identities in every allowed operator representation.
+
+On the ordered generator tuple \((X_1,X_2,X_3,Y_1,Y_2,Y_3)\), use
+the signed substitutions
+\[
+ r=(-Y_1,-Y_2,Y_3,-X_2,-X_1,-X_3),\qquad
+ s_0=(X_1,X_2,-X_3,Y_2,Y_1,Y_3).
+\]
+For each word-basis column and for signs
+\((a,b)=(1,1),(1,-1),(-1,1),(-1,-1)\), form
+\(\sum_{k=0}^3a^k(r^k+b\,s_0r^k)\) applied to that column.
+Select the first linearly independent columns using rational
+elimination, divide each by the positive gcd of its integer entries,
+and preserve its sign. This constructs \(U_1,\ldots,U_4\) with
+31, 30, 26 and 35 columns. The same operation on
+\((1+s_0)(1-r^2)\) gives \(U_5\) with 61 columns; set \(U_6=rU_5\).
+The construction only defines concrete integer matrices. No assertion
+that they exhaust a symmetry decomposition is used.
+
+The candidate gives five symmetric integer matrices \(M_k\) of sizes
+31, 30, 26, 35 and 61, with common denominator
+\[
+ D_0=18534051411918436794453781905408000000000>0 .
+\]
+Exact symmetric fraction-free elimination checks positive leading
+determinants \(\Delta_j\), with \(\Delta_0=1\), using the update
+\[
+ b'_{ij}=\frac{b_{kk}b_{ij}-b_{ik}b_{kj}}{\Delta_{k-1}}.
+\]
+Each division must have positive denominator and zero remainder.
+The Schur-complement determinant identity shows inductively that
+the pivots are leading principal determinants; the corresponding
+congruent diagonal entries are \(\Delta_j/\Delta_{j-1}>0\).
+Thus all five \(M_k\) are positive definite. The certificate stores
+all 183 determinants.
+
+Construct
+\[
+ Y=D_0^{-1}\left(\sum_{k=1}^4U_kM_kU_k^T+
+                      U_5M_5U_5^T+U_6M_5U_6^T\right)\succeq0 .
+\]
+Real positivity follows term by term under congruence, and complex
+positivity by real and imaginary parts. The full Gram numerator
+is reconstructed in \pkg{certificate/reconstructed_gram.json}.
+Expansion of every ordered product \(w_i^*w_j\), reduction as above,
+and comparison at all 8,452 normal-form positions prove
+\eqref{eq:upperidentity}. To pass from the finite identity to an
+operator inequality, evaluate the words on a strategy and set
+\(\eta=(w_i\xi)_i\). Then
+\(\langle\xi,\mathbf w^*Y\mathbf w\,\xi\rangle
+=\eta^*(Y\otimes I)\eta\ge0\).
+This proves the uniform upper bound for every finite dimension.
+
+\subsection{Acceptance and mutation contract}
+Both candidates are parsed with duplicate-key and nonfinite-number
+rejection; rational fields reject floating values and invalid
+denominators. The normalization coefficient dictionaries must agree
+exactly, the deterministic local maximum must be zero, all lower
+projector and value checks must pass, all upper determinant and
+coefficient checks must pass, and the rational endpoint comparisons
+must hold. Each condition fails by an explicit exception. Fresh
+receipts are compared with the frozen ones only after recomputation.
+R1's 13 mutation probes test mathematical rejection paths; original
+candidate generation is not rerun and is not a proof premise.

@@ -1,0 +1,177 @@
+{
+  "input_archive": {
+    "filename": "I3322_PUBLIC_RELEASE_FINALIZATION_INPUTS.zip",
+    "sha256": "c85cca86fa8c3c87de0cab88eec5ec537817d716898760b35a7bff9f4aa46512"
+  },
+  "principal_artifacts": [
+    {
+      "filename": "01_FINAL_CLEAN_EXACT_VALUE_CLOSURE_e592.zip",
+      "sha256": "e592932a0e12ee7fa97d9a1a30b84abd17a3293f1546fda9fd9818415c34edea",
+      "bytes": 39018001,
+      "role": "CANONICAL theorem authority"
+    },
+    {
+      "filename": "02_FINAL_INTEGRATED_HOSTILE_AUDIT_7b57.zip",
+      "sha256": "7b576bff6886029e1e00cbf9f70c51be42f50c2076c2af65cf6fab6843db24ef",
+      "bytes": 177882,
+      "role": "OPEN-MINOR; theorem survives (validation)"
+    },
+    {
+      "filename": "03_PROJECT_SOURCE_PROVENANCE_AUDIT_b517.zip",
+      "sha256": "b517f69ecfd22084ffcc51251be928a1340432157bc4359e85f1fa9156ff063c",
+      "bytes": 227433,
+      "role": "OPEN-MINOR; theorem source-provenance survives (validation)"
+    },
+    {
+      "filename": "I3322_PAPER_V0_1_2.zip",
+      "sha256": "1aa58a1d74f1aa130024196f4f537fcab293e7d78bab073d8432077348ee9905",
+      "bytes": 46696756,
+      "role": "Public v0.1.2 metadata/declaration successor; exposition and frozen replay carrier"
+    },
+    {
+      "filename": "paper_v0_1_2.pdf",
+      "sha256": "81b75cd3a720ab0e2953bdbd79f70c969af5fc48ab01caa75f4522b229f51f2f",
+      "bytes": 711368,
+      "role": "Public v0.1.2 33-page manuscript; exposition, not theorem authority"
+    },
+    {
+      "filename": "06_REJECTED_SOL_O6_PROOF_e452.zip",
+      "sha256": "e4521901d521d3c4c93e04784a2e178ca410896ee291e5a899e82db27ed85a95",
+      "bytes": 276612,
+      "role": "REJECTED — NOT THEOREM AUTHORITY"
+    },
+    {
+      "filename": "07_REJECTED_SOL_O6_HOSTILE_AUDIT_01ee.zip",
+      "sha256": "01ee95689ac0991962161a2398b414269e830a3a08abaabdc11b0fab5d1473a0",
+      "bytes": 89087,
+      "role": "Rejecting hostile audit (historical validation)"
+    }
+  ],
+  "closure_components": [
+    {
+      "filename": "01_CANONICAL_CLEAN_UPSTREAM_76d7.zip",
+      "sha256": "76d7f205d494d09c791d4a862794b6ef5603cc02c494bddf0efb4368ad7ec052",
+      "member": "inputs/01_CANONICAL_CLEAN_UPSTREAM_76d7.zip"
+    },
+    {
+      "filename": "02_O1_O5_CANONICAL_PROOF_b7fc.zip",
+      "sha256": "b7fc43c9f2ad219235e6dfe6d63fe8030f308cb1b6ad56263d2f91283d86989f",
+      "member": "inputs/02_O1_O5_CANONICAL_PROOF_b7fc.zip"
+    },
+    {
+      "filename": "03_O1_O5_HOSTILE_AUDIT_2bed.zip",
+      "sha256": "2bed5d0e22efe931061e0b989282b4cb0eaef2629cf6d8b691a160274b29715b",
+      "member": "inputs/03_O1_O5_HOSTILE_AUDIT_2bed.zip"
+    },
+    {
+      "filename": "04_O1_O5_PROVENANCE_SUPPLEMENT_09a8.zip",
+      "sha256": "09a8c45a9738f2fedf1871c62d15516ff81d21f2b98a3e28e272caa864224832",
+      "member": "inputs/04_O1_O5_PROVENANCE_SUPPLEMENT_09a8.zip"
+    },
+    {
+      "filename": "05_O6_SURVIVOR_PROOF_106ad.zip",
+      "sha256": "106adfdeb56eb792579a7dd0ab9de83dfd06dfe3f4abfcf7b1997abe5ea113ae",
+      "member": "inputs/05_O6_SURVIVOR_PROOF_106ad.zip"
+    },
+    {
+      "filename": "06_O6_FINAL_AUDIT_CONSOLIDATION_18a9.zip",
+      "sha256": "18a92a9ddaaa326eff3ce71588e4125618108c9ec4d0bed4430d94104b6aad12",
+      "member": "inputs/06_O6_FINAL_AUDIT_CONSOLIDATION_18a9.zip"
+    }
+  ],
+  "root_certificate": {
+    "sha256": "6a0154a67ec857c2565dd5036745cd591658f6dea668b6cb3d03f84d8b062117",
+    "s_enclosure": [
+      "0.250875384513976535617336610945951298901321973971476246796391973158622991323050603025506260",
+      "0.250875384513976535617336610945951298901321973971476707728748045068866376435770152964357102"
+    ],
+    "exact_width": "4.60932356071910243385112719549938850842E-52"
+  },
+  "prior_assembly_input": {
+    "filename": "I3322_GITHUB_V0_1_ASSEMBLY_INPUTS.zip",
+    "sha256": "ef66b80cc7f8c7d5ad78bb750f07b5ea4dd066af3a16b0abfdda713c48362f13"
+  },
+  "finalization_inputs": [
+    {
+      "filename": "01_GITHUB_V0_1_REPO_f3df.zip",
+      "sha256": "f3dff1f56d62a9afc048c8a583953353aeac8ef09525811d66d047671e895d05"
+    },
+    {
+      "filename": "02_GITHUB_V0_1_RELEASE_ASSETS_8623.zip",
+      "sha256": "862366ecf42fc1b26dd6e9d584e94e20dd0fc2d3e1e0338e975acc3a11079ef2"
+    }
+  ],
+  "historical_paper_artifacts": [
+    {
+      "filename": "historical/04_PAPER_V0_1_1_0ea5.zip",
+      "sha256": "0ea54751e6209b64ff7957363195c1511b442d4fb2dd823421046ba85a09d0a0",
+      "bytes": 50987111,
+      "role": "HISTORICAL v0.1.1 manuscript/build-QA provenance; superseded public identity"
+    },
+    {
+      "filename": "historical/05_paper_v0_1_1_c1a6.pdf",
+      "sha256": "c1a6e364425a61ca8bae4e94cdf50e81f1a11b9ba3373e481747050e2b426bd0",
+      "bytes": 699161,
+      "role": "HISTORICAL v0.1.1 manuscript/build-QA provenance; superseded public identity"
+    }
+  ],
+  "canonical_repository": {
+    "url": "https://github.com/LeoLam233/i3322-exact-value",
+    "owner": "LeoLam233",
+    "name": "i3322-exact-value"
+  },
+  "public_release_policy": {
+    "profile": "privacy-filtered-public-v0.1.0",
+    "withheld_for_personal_metadata": [
+      {
+        "filename": "01_FINAL_CLEAN_EXACT_VALUE_CLOSURE_e592.zip",
+        "sha256": "e592932a0e12ee7fa97d9a1a30b84abd17a3293f1546fda9fd9818415c34edea"
+      },
+      {
+        "filename": "I3322_PAPER_V0_1_2.zip",
+        "sha256": "1aa58a1d74f1aa130024196f4f537fcab293e7d78bab073d8432077348ee9905"
+      },
+      {
+        "filename": "historical/04_PAPER_V0_1_1_0ea5.zip",
+        "sha256": "0ea54751e6209b64ff7957363195c1511b442d4fb2dd823421046ba85a09d0a0"
+      },
+      {
+        "filename": "I3322_FULL_AUDIT_BUNDLE_v0.1.zip",
+        "sha256": "9c71431df5b7e7c1c34390b60b807453da43f8c93c0b2f5043a950ebcd9954df"
+      }
+    ],
+    "private_full_assets_zip_sha256": "93ac17e3d1471a8d74f5f88f9029b9852c2d221f70b13ecd6fb00bc606d28598"
+  },
+  "public_release_assets": [
+    {
+      "filename": "paper_v0_1_2.pdf",
+      "sha256": "81b75cd3a720ab0e2953bdbd79f70c969af5fc48ab01caa75f4522b229f51f2f",
+      "role": "Public manuscript PDF"
+    },
+    {
+      "filename": "I3322_PAPER_V0_1_2_PUBLIC_SOURCE.zip",
+      "sha256": "10e6e1b2a9b6ac8f80999ae87e407311a7edea7458adfab132d051765bf5af3b",
+      "role": "Privacy-safe public manuscript/source package; not frozen replay authority"
+    },
+    {
+      "filename": "02_FINAL_INTEGRATED_HOSTILE_AUDIT_7b57.zip",
+      "sha256": "7b576bff6886029e1e00cbf9f70c51be42f50c2076c2af65cf6fab6843db24ef",
+      "role": "Final integrated hostile audit"
+    },
+    {
+      "filename": "03_PROJECT_SOURCE_PROVENANCE_AUDIT_b517.zip",
+      "sha256": "b517f69ecfd22084ffcc51251be928a1340432157bc4359e85f1fa9156ff063c",
+      "role": "Project source-provenance audit"
+    },
+    {
+      "filename": "06_REJECTED_SOL_O6_PROOF_e452.zip",
+      "sha256": "e4521901d521d3c4c93e04784a2e178ca410896ee291e5a899e82db27ed85a95",
+      "role": "Rejected proof; not theorem authority"
+    },
+    {
+      "filename": "07_REJECTED_SOL_O6_HOSTILE_AUDIT_01ee.zip",
+      "sha256": "01ee95689ac0991962161a2398b414269e830a3a08abaabdc11b0fab5d1473a0",
+      "role": "Rejecting hostile audit"
+    }
+  ]
+}

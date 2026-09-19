@@ -1,0 +1,64 @@
+\section{Reproducibility and machine certificates}\label{sec:reproducibility}
+The manuscript is assembled from one authenticated input archive. Its
+primary mathematical authority is the final clean closure, which contains
+the canonical upstream and local-matching components and the surviving
+global-uniqueness component. The two other top-level archives are validation
+and source-provenance evidence. Their audit verdicts support confidence;
+the mathematical premises are the statements and proofs reproduced here,
+the cited external theorems, and the specified finite certificates.
+
+The accompanying manuscript archive contains the original input ZIP,
+unaltered, under \pkg{reproducibility/}. The standard-library wrapper
+\pkg{tools/replay_frozen.py} offers the command
+\begin{center}
+\texttt{python tools/replay\_frozen.py --full}
+\end{center}
+from the manuscript directory. It checks the manuscript inventory, the
+original archive hash and its input manifest, extracts into a fresh temporary
+directory, and runs the frozen component replayers without editing their
+source. The quick command, omitting \pkg{--full}, checks the final integration
+and its mutation tests. Full mode additionally regenerates R0's finite
+identities, R1's exact witnesses, the local-tail symbolic certificate, and
+the global matching and root certificates. No network access is required.
+The exact command scope and environment are recorded in
+\pkg{REPRODUCIBILITY.md}.
+
+The fresh assembly checks passed the final integration replay, including
+12 distinct nested archive identities, 590 nested manifest entries, the
+typed identification chain, strict endpoint signs, and all 13 rational
+Newton intersections. The component replays for R0, R1, local matching,
+and global uniqueness also passed. R1 rejects 13 mathematical mutations.
+The integration mutation checker rejects missing interval premises, changed
+matching objects, branch substitution, false endpoint signs, invalid Newton
+centers and other specified corruptions. The scope is finite rejection
+testing, not a proof that every possible implementation defect is absent.
+Fresh logs and a receipt are included in the manuscript archive.
+
+The arithmetic layers have different contracts. R0 and R1 use arbitrary
+precision integers and rational arithmetic. The local fixed-point and
+characteristic identities use exact symbolic operations, with frozen
+SymPy 1.14.0 and its bundled dependency. Global matching uses a small
+project-local real/complex interval and first-derivative implementation,
+with directed Decimal contexts at precision 90. A square root is widened
+from its correctly rounded nearest value and accepted only after the
+squared endpoints enclose the argument. Complex rectangles certify the
+chosen square-root branch and nonzero division denominators. Analytic
+remainder bounds are added before propagation; they are not inferred from
+rounding alone. The final enclosure arithmetic is independently checked
+using rational numbers.
+
+The executable trust base includes the checker sources, Python and its
+integer, rational and Decimal implementations, parsing and filesystem
+behavior, the operating system and hardware. The stable-manifold,
+compactness, contraction and variational arguments are ordinary analytic
+proofs rather than executable proof-assistant terms. Hashes establish
+custody and exact version identity, not mathematical correctness.
+Detailed identities and certificate paths are in
+Appendices~\ref{app:bounds}--\ref{app:crosswalk}; full archive hashes are
+in Table~\ref{tab:hashes}.
+
+The surviving global-uniqueness source has archive digest beginning
+\pkg{106adfdeb56e}. The rejected alternative branch is not used.
+The distinction is enforced by the frozen integration's closed archive
+allowlist and exact source pins. Replaying a branch with a numerically
+matching answer would not meet this contract.

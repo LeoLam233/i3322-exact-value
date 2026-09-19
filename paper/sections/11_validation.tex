@@ -1,0 +1,59 @@
+\section{Limitations, validation status and disclosure}\label{sec:validation}
+The mathematical chain is closed relative to the explicit external
+premises and finite arithmetic contracts stated above. The frozen proof
+package survives internal clean reconstruction, independent adversarial
+checking of specified components, exact replay, and the project-level
+source-provenance audit. This describes the recorded scope of checking.
+It does not turn model agreement into independent mathematical evidence.
+External expert human validation of the new exact-value theorem has
+\emph{not yet occurred}, and journal peer review of this new result has
+\emph{not yet occurred}.
+
+The final integrated adversarial-audit verdict is
+\pkg{OPEN-MINOR}. Its sole remaining mathematical-package issue is M001:
+the generic Decimal midpoint helper can return a point outside an
+arbitrarily narrow input interval. For example, at precision 90 its
+midpoint of the point interval \(1-10^{-90}\) can be \(1\).
+The defect remains genuine and unpatched in the frozen source.
+The sealed arithmetic audit reports that all 22,074 actual midpoint
+returns in the submitted traces lay within their respective input
+intervals, and that no submitted load-bearing enclosure was invalidated.
+The assembly's independent rational integration replay checked the 13
+actual root-Newton centers. It did not repeat the historical
+107,716,343-operation observer audit. Thus M001 is retained as an open,
+non-load-bearing implementation defect, not relabelled as nonexistent.
+
+The project source-provenance verdict is
+\pkg{SOURCE-PROVENANCE-OPEN-MINOR}. It preserves the known source-text
+errors, M001, and the unresolved complete historical generation ancestry
+of the R1 witnesses. According to the frozen audits none of these
+remaining issues is load-bearing for the theorem. They nevertheless
+belong in the validation record and should be available to human referees.
+
+The theorem concerns only the specified finite-dimensional projective
+tensor supremum. It makes no commuting=tensor assertion, uses no R2,
+and does not claim uniqueness of a physical optimizer or carrier,
+finite-dimensional attainment, or an elementary closed form for the value.
+
+\subsection*{AI and computational assistance}
+The supplied record documents substantial AI and computational assistance
+in proof discovery, clean reconstruction, certificate generation,
+adversarial auditing and source-provenance checking. This manuscript's
+exposition, notation normalization, supporting documentation and assembly
+were also prepared with AI assistance. Generated arguments and scouting
+numerics are distinguished from exact identity checking and rigorous
+interval certification. The fresh replays reported here run specified
+checkers against frozen inputs; their success is not a claim that every
+analytic argument or the software stack has been formally verified.
+Different AI runs may share ideas, data and external premises, so their
+agreement is not counted as independent mathematical evidence.
+External human expertise and peer review remain separate, pending forms
+of validation. No AI system is listed as an author. The responsible
+author must review the mathematics, citations, disclosure and final
+submission. Acknowledgements are deferred until external human review.
+
+\subsection*{Funding}
+The author received no specific funding for this work.
+
+\subsection*{Competing interests}
+The author declares no competing interests.

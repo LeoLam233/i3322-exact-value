@@ -1,0 +1,14 @@
+# Licensing map
+
+Copyright (c) 2026 Dehao Lin, for owner-authored material.
+
+| Material | License |
+|---|---|
+| Owner-authored code, scripts and tooling | MIT License, in LICENSES/MIT.txt |
+| Owner-authored manuscript, prose, README files and documentation | Creative Commons Attribution 4.0 International (CC BY 4.0), in LICENSES/CC-BY-4.0.txt |
+
+Third-party material and pre-existing sealed/frozen artifacts are excluded from these blanket grants. They retain their existing notices, rights and licenses. No statement in this repository license changes the byte-preserved sealed artifacts' existing legal status or grants rights the owner does not hold. See THIRD_PARTY_NOTICES.md.
+
+The newly authored public manuscript v0.1.2 and its metadata/declarations are covered as owner-authored prose. Sealing a new distribution does not extend this grant to its embedded pre-existing proof, audit, source or reproducibility artifacts. Code and prose remain subject to the distinct licenses above.
+
+The CC BY 4.0 legal text is included locally in full. Its canonical identifier is https://creativecommons.org/licenses/by/4.0/legalcode .

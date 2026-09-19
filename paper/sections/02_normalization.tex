@@ -1,0 +1,58 @@
+\section{Bell-functional normalization and canonical quantity}\label{sec:normalization}
+Let \(A_i=A_i^*=A_i^2\) and \(B_j=B_j^*=B_j^2\), for
+\(i,j\in\{1,2,3\}\), be the event projectors of binary measurements. We use
+\begin{equation}\label{eq:bell}
+\begin{split}
+\Bell={}&-A_2-B_1-2B_2
+ +A_1B_1+A_1B_2+A_2B_1+A_2B_2\\
+ &-A_1B_3+A_2B_3-A_3B_1+A_3B_2.
+\end{split}
+\end{equation}
+Here \(A_iB_j\) means \(A_i\otimes B_j\); the omitted tensor factor in a
+marginal is the identity. The convention uses event probabilities, not
+\(\pm1\) observables.
+
+\begin{definition}\label{def:St}
+The number \(\St\) is the supremum of
+\(\langle\psi,\Bell\psi\rangle\) over unit vectors
+\(\psi\in\mathcal H_A\otimes\mathcal H_B\) and the six projectors above,
+where both local Hilbert spaces are finite-dimensional and their dimensions
+are not fixed in advance. Equivalently one may use normalized density
+operators: a finite spectral decomposition expresses their values as convex
+combinations of pure-state values for the same measurements.
+\end{definition}
+
+\begin{proposition}[Normalization identities]\label{prop:normalization}
+The local bound of \eqref{eq:bell} is zero. In the event convention of
+Mghirbi~\cite{Mghirbi2026paper}, the substitution
+\[
+ (P_1,P_2,P_3)=(A_2,A_1,A_3),\qquad
+ (Q_1,Q_2,Q_3)=(B_2,B_1,B_3)
+\]
+identifies the Bell expression exactly, with scale one and shift zero.
+Writing \(X_i=2P_i-I\), \(Y_j=2Q_j-I\), its involution version is
+\begin{align}
+ 4\Bell&=\mathsf B-4I,\label{eq:involutions}\\
+ \mathsf B&=X_1+X_2-Y_1-Y_2+X_1(Y_1+Y_2+Y_3)\notag\\
+ &\quad+X_2(Y_1+Y_2-Y_3)+X_3(Y_1-Y_2).\notag
+\end{align}
+\end{proposition}
+\begin{proof}
+Substitution in
+\(I_M=-P_1-2Q_1-Q_2+P_1Q_1+P_1Q_2+P_1Q_3+
+P_2Q_1+P_2Q_2-P_2Q_3+P_3Q_1-P_3Q_2\)
+gives every coefficient of \eqref{eq:bell}. Expanding
+\(P_i=(I+X_i)/2\), \(Q_j=(I+Y_j)/2\) gives
+\eqref{eq:involutions}. These maps are invertible on the stated projective
+strategy class and preserve dimensions and the state. Exact evaluation on
+the 64 deterministic assignments of six bits gives maximum zero and minimum
+\(-3\); all-zero projectors attain zero. Convexity gives the same local bound
+for mixtures. The coefficient identities and all 64 integer evaluations are
+recomputed in the normalization certificate of Appendix~\ref{app:bounds}.
+\end{proof}
+
+We will use operators on \(\ell^2(\ZZ)\) as variational carriers. Their
+appearance does not redefine \(\St\). The equality linking their variational
+parameter to the finite tensor supremum is proved in
+Proposition~\ref{prop:qstar}; it uses finite realizations and a specifically
+restricted external upper-bound theorem.

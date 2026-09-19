@@ -1,0 +1,92 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathrsfs}
+\usepackage{array,longtable}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{certificate}[theorem]{Finite certificate}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{premise}[theorem]{External premise}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\numberwithin{equation}{section}
+\newcommand{\St}{S_{\mathrm t}}
+\newcommand{\Bell}{\mathcal B}
+\newcommand{\Cs}{\mathcal C_s}
+\newcommand{\Ms}{\mathcal M_s}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\ZZ}{\mathbb Z}
+\newcommand{\CC}{\mathbb C}
+\newcommand{\Id}{\mathrm{Id}}
+\newcommand{\Fhat}{\widehat F_s}
+\newcommand{\Res}{\mathcal R}
+\newcommand{\HH}{\mathscr H}
+\newcommand{\KK}{\mathscr K}
+\newcommand{\pkg}[1]{\nolinkurl{#1}}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\TV}{TV}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\Fix}{Fix}
+\setlength{\emergencystretch}{2em}
+\setlength{\LTpre}{6pt}
+\setlength{\LTpost}{6pt}
+\title{An exact matching characterization of the\texorpdfstring{\\}{ }finite-dimensional projective tensor supremum\texorpdfstring{\\}{ }of the \texorpdfstring{$I_{3322}$}{I3322} Bell inequality}
+\author{Dehao Lin\\
+\small School of Physics, Sun Yat-sen University,\\
+\small Guangzhou, China\\
+\texttt{lindh9@mail2.sysu.edu.cn}}
+\date{Manuscript v0.1.2 --- 19 September 2026}
+\hypersetup{pdfauthor={Dehao Lin},
+  pdftitle={An exact matching characterization of the finite-dimensional projective tensor supremum of the I3322 Bell inequality}}
+\begin{document}
+\maketitle
+\begin{abstract}
+We present a machine-assisted exact characterization of the supremum
+\(\St\) of a specified normalization of \(I_{3322}\), over binary projective
+measurements on arbitrary finite-dimensional tensor products, with no fixed
+bound on local dimension. A selected positive Jacobi carrier at the supremum
+has strictly decreasing labels and prescribed outer tails. Its stationary
+recurrence converts the problem into full-state matching of a one-dimensional
+unstable tail and a one-dimensional stable tail. A complete interval-certified
+analysis with two independent phases excludes asymmetric full matches before
+reducing to an explicitly defined analytic scalar residual. That residual has
+a strictly positive derivative throughout the full admissible parameter
+interval and exactly one zero. Consequently \(\St\) is the unique matching
+parameter, with a strict rational enclosure of width
+\(4.60932356071910243385112719549938850842\times10^{-52}\).
+The proof separates analytic arguments, finite certificates, and external
+theorem premises. It uses three specified interfaces from Coladangelo's v1
+preprint and the standard real-analytic stable/unstable manifold theorem.
+It makes no commuting-operator equality claim. The frozen proof survives
+internal reconstruction, exact replay, and adversarial and provenance audits;
+a non-load-bearing midpoint-helper defect remains disclosed. External expert
+human validation and journal peer review of this exact-value result have not
+yet occurred.
+\end{abstract}
+\tableofcontents
+\input{sections/01_introduction}
+\input{sections/02_normalization}
+\input{sections/03_upstream}
+\input{sections/04_carriers}
+\input{sections/05_matching}
+\input{sections/06_uniqueness}
+\input{sections/07_identification}
+\input{sections/08_enclosure}
+\input{sections/09_reproducibility}
+\input{sections/10_provenance}
+\input{sections/11_validation}
+\appendix
+\input{appendices/A_carrier_proof}
+\input{appendices/B_finite_bounds}
+\input{appendices/C_symbolic_certificates}
+\input{appendices/D_crosswalk}
+\input{appendices/E_audits}
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

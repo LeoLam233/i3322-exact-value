@@ -1,0 +1,111 @@
+\section{Conventions, dependencies and frozen-source crosswalk}
+\label{app:crosswalk}
+\subsection{Notation crosswalk}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.30\textwidth}>{\raggedright\arraybackslash}p{0.38\textwidth}}
+This manuscript & Frozen convention & Meaning\\ \hline
+\(\St\) & \(S_t\) & Finite-dimensional projective tensor supremum;
+the subscript is not a variable.\\
+\(s\), \(t=a(s)\) & Same & Eigenvalue/Bell parameter and positive outer
+label, with \(s=\sigma(t)\).\\
+\(b(c)\) & Coladangelo's \(a(c)\) & Jacobi off-diagonal
+\(\sqrt{1-c^2}/2\), distinct from the outer magnitude \(a(s)\).\\
+\(c_j\) & Source \(\gamma_{j-1}\) & Label index shifted by one;
+amplitude index unchanged.\\
+\(u_j\) & Canonical \(u_j\) & \(\lambda_j/\lambda_{j-1}\).\\
+\(\zeta,\eta\) & Global component \(u,v\) & Independent tail phases,
+not canonical amplitude ratios.\\
+\(q,\bar q\) & Global component \(q,h\) &
+\(q=b(c_{j+1})\lambda_{j+1}/\lambda_j\) and \(s-d-q\).\\
+\(\mathfrak h\) & Upstream \(h\) & External concave scalar certificate,
+distinct from the upper rational endpoint \(h\).\\
+\(\HH,\KK\) & Global component \(H,K\) & Projected matching residuals;
+\(H(c)\) remains the Jacobi operator.\\
+\(B_0(c)\) & Global component \(B(c)\) & \(b(c)^2=(1-c^2)/4\);
+\(\Bell\) remains the Bell operator.\\
+\(C_0\) & Global component \(C\) & Central phase interval; \(C(t)\)
+in \eqref{eq:mu} is a spectral polynomial.\\
+\(\Res\) & \(\mathrm{Rcal}\) & Exact analytic scalar residual after
+global asymmetric exclusion.\\
+\end{longtable}
+
+\subsection{Dependency graph}
+The load-bearing logical graph is
+\[
+\begin{array}{c}
+ \text{Rational lower witness + positive word identity}\\
+ \Downarrow\\
+ \St\in I\\[2pt]
+ \text{Coladangelo interfaces + finite realization + carrier argument}\\
+ \Downarrow\\
+ \mathcal C_{\St}\ne\varnothing\\[2pt]
+ \text{Local hyperbolicity + analytic local-manifold premise}\\
+ \Downarrow\\
+ \mathcal C_s\ne\varnothing\ \Longleftrightarrow\quad
+                      \mathcal M_s\ne\varnothing\quad(s\in I)\\[2pt]
+ \text{Independent-phase cover + scalar equivalence + full derivative}\\
+ \Downarrow\\
+ \pi_s(\mathcal M)=\{s_*\}\\
+ \Downarrow\\
+ \St=s_*\quad\Longrightarrow\quad\ell<\St<h
+ \quad\text{(with the separate root certificate).}
+\end{array}
+\]
+The analytic local-manifold premise enters both the matching bridge
+and the identification of the certified analytic germ with the
+intrinsic tail. The global uniqueness theorem consumes the entire
+local-matching interface: full-state coordinates, valid chains,
+neighborhood independence and exact-zero ownership. Audit and custody
+records are validation nodes, not replacement theorem premises.
+
+\subsection{Obligation-to-manuscript crosswalk}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.12\textwidth}>{\raggedright\arraybackslash}p{0.35\textwidth}>{\raggedright\arraybackslash}p{0.43\textwidth}}
+Frozen label & Manuscript statement & Canonical source\\ \hline
+R1 & Proposition~\ref{prop:R1}, Appendix~\ref{app:bounds}
+& Upstream R1 \path{PROOF.md}, normalization and exact candidate checkers.\\
+R0 & Theorem~\ref{thm:R0}, Appendix~\ref{app:carrier}
+& Upstream R0 \path{PROOF.md}, all fourteen analytic steps.\\
+O1 & \eqref{eq:R1}, \eqref{eq:sigma}
+& Local component \path{O1_PARAMETER_DOMAIN.md}, \path{DEFINITIONS.md} D1.\\
+O2 & Lemma~\ref{lem:tails} and neighborhood independence
+& \path{O2_LOCAL_TAILS.md}, \path{O1_O5_THEOREM.md} items 1--2.\\
+O3 & Proposition~\ref{prop:bridge}, soundness direction
+& \path{O3_MATCHING_SOUNDNESS.md}; three-coordinate concatenation,
+positive normalized square-summable amplitudes.\\
+O4 & Proposition~\ref{prop:bridge}, completeness direction
+& \path{O4_CARRIER_COMPLETENESS.md}; arbitrary carrier, finite entry,
+crossing beginning at an exact zero.\\
+O5 & Proposition~\ref{prop:existmatch}
+& \path{O5_MATCH_EXISTENCE.md}; R1 domain and existential R0.\\
+O6 & Lemma~\ref{lem:rational} through Theorem~\ref{thm:O6}
+& Surviving \path{PROOF.md}, symbolic, local-manifold,
+global-phase, asymmetric, scalar and uniqueness components.\\
+O7 & Theorem~\ref{thm:O7}
+& Final closure \path{O7_TRUE_VALUE_IDENTIFICATION.md}.\\
+O8 & Theorem~\ref{thm:O8}
+& Final closure \path{O8_ROOT_CERTIFICATION.md} and surviving
+\path{ROOT_ISOLATION.md}, \path{certificates/root.json}.\\
+\end{longtable}
+
+\subsection{Custody and offline locations}
+The original assembly archive has a single root
+\path{I3322_PAPER_ASSEMBLY_INPUTS/}. Its three numbered archives are
+the final clean closure, final integrated audit and source-provenance
+audit. Inside the closure's \path{inputs/} directory, component A
+is \path{01_CANONICAL_CLEAN_UPSTREAM_76d7.zip}; B is
+\path{02_O1_O5_CANONICAL_PROOF_b7fc.zip}; C and D are the
+local-component audit and provenance supplement; E is
+\path{05_O6_SURVIVOR_PROOF_106ad.zip}; F is
+\path{06_O6_FINAL_AUDIT_CONSOLIDATION_18a9.zip}.
+Inside A, the directories \path{R0_CANONICAL/} and
+\path{R1_CANONICAL/} contain the two upstream proof archives.
+
+The upstream interface in A and its copies in B and E's embedded
+conditional handoff are byte-identical. The local-matching definitions
+in B and E's handoff differ in prose; their correspondence is semantic:
+the same \(I,F_s,H,a,r,\mathcal D,\Sigma\), full-state chains,
+independent tail points/counts, carrier class and local-capture
+statements are used. The closure's \path{COMPONENT_INTERFACES.md}
+records each correspondence. No generic text parser is claimed to
+prove this semantic identity.
+
+\input{tables/hashes}
