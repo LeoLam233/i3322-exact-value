@@ -10,7 +10,8 @@ The sole public-finalization input was `I3322_PUBLIC_RELEASE_FINALIZATION_INPUTS
 | `02_FINAL_INTEGRATED_HOSTILE_AUDIT_7b57.zip` | OPEN-MINOR; theorem survives (validation) | `7b576bff6886029e1e00cbf9f70c51be42f50c2076c2af65cf6fab6843db24ef` |
 | `03_PROJECT_SOURCE_PROVENANCE_AUDIT_b517.zip` | OPEN-MINOR; theorem source-provenance survives (validation) | `b517f69ecfd22084ffcc51251be928a1340432157bc4359e85f1fa9156ff063c` |
 | `I3322_PAPER_V0_1_2.zip` | Sealed v0.1.2 replay carrier; privacy-withheld from public Release | `1aa58a1d74f1aa130024196f4f537fcab293e7d78bab073d8432077348ee9905` |
-| `paper_v0_1_2.pdf` | Public v0.1.2 33-page manuscript; exposition, not theorem authority | `81b75cd3a720ab0e2953bdbd79f70c969af5fc48ab01caa75f4522b229f51f2f` |
+| `paper_v0_1_2.pdf` (v0.1.0 release) | Original public v0.1.2 33-page manuscript; historical release identity | `81b75cd3a720ab0e2953bdbd79f70c969af5fc48ab01caa75f4522b229f51f2f` |
+| `paper_v0_1_2.pdf` (v0.1.1 release) | Corrected public 35-page manuscript; exposition, not theorem authority | `af355a052b3a7377ff668291b59b1dc1b2ca4619e94f9d12a3f21e38387a5c57` |
 | `06_REJECTED_SOL_O6_PROOF_e452.zip` | REJECTED — NOT THEOREM AUTHORITY | `e4521901d521d3c4c93e04784a2e178ca410896ee291e5a899e82db27ed85a95` |
 | `07_REJECTED_SOL_O6_HOSTILE_AUDIT_01ee.zip` | Rejecting hostile audit (historical validation) | `01ee95689ac0991962161a2398b414269e830a3a08abaabdc11b0fab5d1473a0` |
 

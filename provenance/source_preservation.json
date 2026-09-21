@@ -76,40 +76,44 @@
       "asset": "I3322_PAPER_V0_1_2.zip",
       "member": "I3322_PAPER_V0_1_2/main.tex",
       "sha256": "e5efe2e3757a90f666b26f6973b277cd26b731a46429db06402a73413f160c16",
+      "current_sha256": "6e827eaf5a9eb68ea967312833826f7b6c0cc7008e339af299ad11729b3a9c78",
       "v0_1_1_sha256": "802ebc662eaf0ddcc4e33497b2d68ba3f635bdc0f87f5b37846c8b9112c9ebad",
       "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
       "v0_1_1_member": "I3322_PAPER_V0_1_1/main.tex",
-      "classification": "METADATA-ONLY SOURCE"
+      "classification": "REPOSITORY v0.1.1 RELEASE LABEL; SEALED v0.1.2 SOURCE PRESERVED"
     },
     {
       "repository_path": "paper/paper_v0_1_2.pdf",
       "asset": "I3322_PAPER_V0_1_2.zip",
       "member": "I3322_PAPER_V0_1_2/paper_v0_1_2.pdf",
       "sha256": "81b75cd3a720ab0e2953bdbd79f70c969af5fc48ab01caa75f4522b229f51f2f",
+      "current_sha256": "af355a052b3a7377ff668291b59b1dc1b2ca4619e94f9d12a3f21e38387a5c57",
       "v0_1_1_sha256": "c1a6e364425a61ca8bae4e94cdf50e81f1a11b9ba3373e481747050e2b426bd0",
       "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
       "v0_1_1_member": "I3322_PAPER_V0_1_1/paper_v0_1_1.pdf",
-      "classification": "METADATA-ONLY REBUILD"
+      "classification": "v0.1.1 CITATION/PROVENANCE CORRECTIVE REBUILD; SEALED PDF PRESERVED"
     },
     {
       "repository_path": "paper/references.bib",
       "asset": "I3322_PAPER_V0_1_2.zip",
       "member": "I3322_PAPER_V0_1_2/references.bib",
       "sha256": "1044920fd9f07412b05ef4d3bf7c5fd0fbd11392c3ebb230c7afcb034d4921a8",
+      "current_sha256": "26d63317512f3762a475085a6d080e8a67d23977bfd145d3c73349cb80043bc2",
       "v0_1_1_sha256": "1044920fd9f07412b05ef4d3bf7c5fd0fbd11392c3ebb230c7afcb034d4921a8",
       "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
       "v0_1_1_member": "I3322_PAPER_V0_1_1/references.bib",
-      "classification": "BYTE-IDENTICAL"
+      "classification": "v0.1.1 DOUGLAS BIBLIOGRAPHY ADDITION; SEALED SOURCE PRESERVED"
     },
     {
       "repository_path": "paper/sections/01_introduction.tex",
       "asset": "I3322_PAPER_V0_1_2.zip",
       "member": "I3322_PAPER_V0_1_2/sections/01_introduction.tex",
       "sha256": "6821aaefa5cd69f2816cdaecbf474cfb9c8cbb49060a5a16a4cfd8e2f0e6f52a",
+      "current_sha256": "751c08e685f79b143dad2b35bbd0e800b28a7acd55a62dbd869ab8d6269352fa",
       "v0_1_1_sha256": "6821aaefa5cd69f2816cdaecbf474cfb9c8cbb49060a5a16a4cfd8e2f0e6f52a",
       "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
       "v0_1_1_member": "I3322_PAPER_V0_1_1/sections/01_introduction.tex",
-      "classification": "BYTE-IDENTICAL"
+      "classification": "v0.1.1 DOUGLAS CITATION/PRIORITY CORRECTION; SEALED SOURCE PRESERVED"
     },
     {
       "repository_path": "paper/sections/02_normalization.tex",
@@ -146,10 +150,11 @@
       "asset": "I3322_PAPER_V0_1_2.zip",
       "member": "I3322_PAPER_V0_1_2/sections/05_matching.tex",
       "sha256": "a05bb3e7e8c097885c873abfc236d72619e89a0f6e97bbdaa219c7a9698338b5",
+      "current_sha256": "e052c9c0e62c1732ae2c5482fe5f2cd75d10abbb8d377ba8947e4bf36a6feefc",
       "v0_1_1_sha256": "a05bb3e7e8c097885c873abfc236d72619e89a0f6e97bbdaa219c7a9698338b5",
       "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
       "v0_1_1_member": "I3322_PAPER_V0_1_1/sections/05_matching.tex",
-      "classification": "BYTE-IDENTICAL"
+      "classification": "v0.1.1 MATCHING-PICTURE ATTRIBUTION; SEALED SOURCE PRESERVED"
     },
     {
       "repository_path": "paper/sections/06_projected_scalar.tex",
@@ -206,10 +211,11 @@
       "asset": "I3322_PAPER_V0_1_2.zip",
       "member": "I3322_PAPER_V0_1_2/sections/10_provenance.tex",
       "sha256": "f21d8f5301bc0279c8c57a876ff5f0ae4daed1b1f3895fc7382fc85fd622934c",
+      "current_sha256": "b821b83501275fa7257306bef671ae03b9a5097d68ab149d451db2922c7ac4b8",
       "v0_1_1_sha256": "f21d8f5301bc0279c8c57a876ff5f0ae4daed1b1f3895fc7382fc85fd622934c",
       "v0_1_1_asset": "04_PAPER_V0_1_1_0ea5.zip",
       "v0_1_1_member": "I3322_PAPER_V0_1_1/sections/10_provenance.tex",
-      "classification": "BYTE-IDENTICAL"
+      "classification": "v0.1.1 DOUGLAS PROVENANCE CORRECTION; SEALED SOURCE PRESERVED"
     },
     {
       "repository_path": "paper/sections/11_validation.tex",
@@ -252,5 +258,5 @@
       "classification": "BYTE-IDENTICAL"
     }
   ],
-  "scope": "Current readable paper files pinned to public v0.1.2; v0.1.1 digests retained as historical source provenance. Only approved metadata/declarations and resulting PDF differ."
+  "scope": "The original sealed v0.1.2 identities remain byte-preserved. For the six citation/provenance-correction surfaces, current_sha256 pins the readable repository v0.1.1-release bytes while sha256 retains the pre-correction sealed identity; other readable paper files remain identical to the seal. Historical pre-publication manuscript v0.1.1 digests are retained separately."
 }

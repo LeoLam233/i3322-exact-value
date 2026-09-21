@@ -32,7 +32,7 @@
       "filename": "paper_v0_1_2.pdf",
       "sha256": "81b75cd3a720ab0e2953bdbd79f70c969af5fc48ab01caa75f4522b229f51f2f",
       "bytes": 711368,
-      "role": "Public v0.1.2 33-page manuscript; exposition, not theorem authority"
+      "role": "Original v0.1.0-release public v0.1.2 33-page manuscript; historical release identity"
     },
     {
       "filename": "06_REJECTED_SOL_O6_PROOF_e452.zip",
@@ -172,6 +172,23 @@
       "filename": "07_REJECTED_SOL_O6_HOSTILE_AUDIT_01ee.zip",
       "sha256": "01ee95689ac0991962161a2398b414269e830a3a08abaabdc11b0fab5d1473a0",
       "role": "Rejecting hostile audit"
+    }
+  ],
+  "public_release_assets_v0_1_1": [
+    {
+      "filename": "I3322_GITHUB_V0_1_1_PUBLIC_RELEASE_ASSETS.zip",
+      "sha256": "9690857a845f00014da00d3af44a147407079c1043a8366d922a7d05c117d9fd",
+      "role": "Privacy-filtered v0.1.1 corrective release bundle"
+    },
+    {
+      "filename": "I3322_PAPER_V0_1_2_PUBLIC_SOURCE.zip",
+      "sha256": "94247815dda926ce62602bd7476a611919a652708d6df7bacda8b7dd3a452297",
+      "role": "Corrected public manuscript/source package; not frozen replay authority"
+    },
+    {
+      "filename": "paper_v0_1_2.pdf",
+      "sha256": "af355a052b3a7377ff668291b59b1dc1b2ca4619e94f9d12a3f21e38387a5c57",
+      "role": "Corrected public manuscript PDF"
     }
   ]
 }

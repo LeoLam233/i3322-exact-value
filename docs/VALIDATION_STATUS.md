@@ -14,7 +14,7 @@
 | R1 mathematical validity | Independently exact-certified | Exact verification of the supplied rational objects |
 | R1 complete pre-release generation ancestry | Unresolved | Discovery history limit, not a missing mathematical premise |
 | Rejected Sol O6 attempt | REJECTED — NOT THEOREM AUTHORITY | Replay PASS did not survive arithmetic audit |
-| Manuscript v0.1.2 build/render | Fresh QA PASS | New 33-page metadata/declaration build; all pages rendered/reviewed; mathematical content unchanged |
+| Manuscript v0.1.2 / repository release v0.1.1 build/render | Fresh QA PASS | Corrected 35-page build; all pages rendered/reviewed; citations/provenance updated, mathematical claims and proof code unchanged |
 | External expert human validation | PENDING | Ready for examination is not already validated |
 | Journal peer review | PENDING | Research candidate, not peer-reviewed publication |
 | License and author metadata | FINALIZED | Approved Dehao Lin metadata; MIT code, CC BY 4.0 prose; explicit third-party/frozen exclusions; final CITATION.cff |

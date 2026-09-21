@@ -39,10 +39,15 @@ def verify_bundle(path):
             require(entries.get('assets/' + item['filename']) == item['sha256'], 'Bundle authority pin mismatch')
     return len(entries)
 
-def verify_assets(directory, check_bundle=False, private_review=False):
+def verify_assets(directory, check_bundle=False, private_review=False, release_v0_1_1=False):
     directory = Path(directory).resolve()
     supplied = directory / 'SHA256SUMS'
-    expected = ROOT / ('release/PRIVATE_REVIEW_SHA256SUMS' if private_review else 'release/SHA256SUMS')
+    if private_review:
+        expected = ROOT / 'release/PRIVATE_REVIEW_SHA256SUMS'
+    elif release_v0_1_1:
+        expected = ROOT / 'release/SHA256SUMS_v0.1.1'
+    else:
+        expected = ROOT / 'release/SHA256SUMS'
     require(supplied.read_bytes() == expected.read_bytes(), 'Release manifest differs from repository pin')
     entries = verify_tree(directory, 'SHA256SUMS')
     pins = json.loads((ROOT / 'provenance/artifact_index.json').read_text(encoding='utf-8'))
@@ -54,7 +59,12 @@ def verify_assets(directory, check_bundle=False, private_review=False):
     else:
         withheld = {x['filename'] for x in pins['public_release_policy']['withheld_for_personal_metadata']}
         require(not (withheld & set(entries)), 'Privacy-withheld artifact present in public release assets')
-        for item in pins.get('public_release_assets', []):
+        pin_items = pins.get('public_release_assets', [])
+        if release_v0_1_1:
+            by_name = {item['filename']: item for item in pin_items}
+            by_name.update({item['filename']: item for item in pins.get('public_release_assets_v0_1_1', [])})
+            pin_items = [by_name[name] for name in entries if name in by_name]
+        for item in pin_items:
             require(entries.get(item['filename']) == item['sha256'], 'Public release asset hash mismatch: ' + item['filename'])
         require(not check_bundle, 'Full audit bundle is private-review only')
     return entries
@@ -75,9 +85,11 @@ def main():
     parser.add_argument('--assets-dir', type=Path, required=True)
     parser.add_argument('--bundle', action='store_true')
     parser.add_argument('--private-review', action='store_true', help='Verify the original full reviewer asset tree instead of the privacy-filtered public Release')
+    parser.add_argument('--release-v0-1-1', action='store_true', help='Verify the v0.1.1 corrective public release tree')
     args = parser.parse_args()
-    entries = verify_assets(args.assets_dir, args.bundle, args.private_review)
-    profile = 'private-review' if args.private_review else 'public'
+    require(not (args.private_review and args.release_v0_1_1), 'Choose at most one release profile')
+    entries = verify_assets(args.assets_dir, args.bundle, args.private_review, args.release_v0_1_1)
+    profile = 'private-review' if args.private_review else ('public-v0.1.1' if args.release_v0_1_1 else 'public-v0.1.0')
     print(f'RELEASE ASSETS: PASS ({len(entries)} files; profile={profile}; bundle checked={args.bundle})')
 
 if __name__ == '__main__':

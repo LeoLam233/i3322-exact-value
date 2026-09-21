@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this research candidate, please cite it using this metadata."
 title: "An exact matching characterization of the finite-dimensional projective tensor supremum of the I3322 Bell inequality"
 type: software
-version: "0.1.0"
-date-released: "2026-09-19"
+version: "0.1.1"
+date-released: "2026-09-22"
 repository-code: "https://github.com/LeoLam233/i3322-exact-value"
 url: "https://github.com/LeoLam233/i3322-exact-value"
 authors:
@@ -12,7 +12,7 @@ authors:
     affiliation: "School of Physics, Sun Yat-sen University, Guangzhou, China"
     email: "lindh9@mail2.sysu.edu.cn"
 abstract: >-
-  Proof-carrying research candidate v0.1.0 for external human review.
+  Proof-carrying research candidate, repository release v0.1.1, for external human review.
   External expert human validation and journal peer review are pending;
   this candidate is not yet journal peer reviewed. The theorem scope is
   the finite-dimensional binary-projective tensor-product supremum.

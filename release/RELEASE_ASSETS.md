@@ -6,12 +6,13 @@ The public GitHub Release is deliberately **privacy-filtered**. It contains the 
 
 ## Public GitHub Release files
 
-The exact public file list and hashes are in [SHA256SUMS](SHA256SUMS).
+The v0.1.1 release uploads `I3322_GITHUB_V0_1_1_PUBLIC_RELEASE_ASSETS.zip`, the corrected `I3322_PAPER_V0_1_2_PUBLIC_SOURCE.zip`, and the rebuilt `paper_v0_1_2.pdf`. The corrective bundle's exact internal file list and hashes are in [SHA256SUMS_v0.1.1](SHA256SUMS_v0.1.1). The original [SHA256SUMS](SHA256SUMS) remains the immutable v0.1.0 public-asset manifest.
 
 | File | Role |
 |---|---|
-| `paper_v0_1_2.pdf` | Public 33-page manuscript; exposition, not theorem authority |
-| `I3322_PAPER_V0_1_2_PUBLIC_SOURCE.zip` | Curated public LaTeX/BibTeX/source package; no embedded private replay archive |
+| `paper_v0_1_2.pdf` | Corrected 35-page manuscript; exposition, not theorem authority |
+| `I3322_PAPER_V0_1_2_PUBLIC_SOURCE.zip` | Corrected public LaTeX/BibTeX/source package; no embedded private replay archive |
+| `RELEASE_NOTES_v0.1.1.md` | Citation/provenance correction, thanks, scope and next steps |
 | `02_FINAL_INTEGRATED_HOSTILE_AUDIT_7b57.zip` | OPEN-MINOR; theorem survives (validation) |
 | `03_PROJECT_SOURCE_PROVENANCE_AUDIT_b517.zip` | OPEN-MINOR; theorem source-provenance survives (validation) |
 | `06_REJECTED_SOL_O6_PROOF_e452.zip` | REJECTED — NOT THEOREM AUTHORITY |

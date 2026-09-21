@@ -22,6 +22,14 @@ This stage was conditional and not accepted as final authority.
 
 Two downstream AI trajectories, including an Astra branch and a Sol-family branch, produced conditional exact-value closures from the same informative upstream scaffold. These historical closures motivated later proof architecture, but they were not retained as final theorem authority because their upstream dependency graph included material whose provenance and independence needed to be re-established.
 
+### 2a. Douglas public precursor and correction record
+
+**Status: HISTORICAL DISCOVERY/PRIORITY RECORD; NOT THEOREM AUTHORITY.**
+
+Seth Douglas's public v1.0.0 archive, *A rigorously characterized I3322 quantum wall and finite-dimensional nonattainment* ([Zenodo DOI 10.5281/zenodo.21782009](https://doi.org/10.5281/zenodo.21782009), published 4 August 2026), contained the candidate constant and matching picture before this repository's public release. The proof claims associated with that August release were subsequently withdrawn as proof claims in the public correction history; the numerical candidate was not thereby disproved. Douglas's later related paper is [arXiv:2609.05555](https://arxiv.org/abs/2609.05555).
+
+The final `i3322-exact-value` chain does not use a Douglas/Apsiape theorem, certificate, root, witness or PASS result as mathematical authority. That independence does not erase discovery history: an untrusted historical method blueprint informed later question formulation, and the earlier public candidate and matching picture are credited explicitly. The present theorem's rigorous proof architecture and scope are distinct from the withdrawn proof attempt.
+
 
 ### 3. Dependency cartography and clean replacement reconstruction
 
@@ -182,6 +190,23 @@ Public v0.1.2 PDF SHA-256:
 Before GitHub publication, the canonical repository identity was fixed as `https://github.com/LeoLam233/i3322-exact-value`. A recursive privacy sweep found a historical personal email address in immutable Git reflogs nested inside the canonical closure/replay-paper provenance chain. The affected sealed ZIPs were not edited, because changing them would destroy the previously audited custody identities. Instead, v0.1.0 uses a privacy-filtered public GitHub Release while retaining the byte-identical full reviewer package privately.
 
 This changes public transport/hosting only. The theorem, paper mathematics, canonical closure SHA-256, certificate bytes, audit verdicts and external-premise scope are unchanged.
+
+### 16. Repository release v0.1.1 citation/provenance correction
+
+**Status: PUBLIC CITATION/PROVENANCE CORRECTION; NO MATHEMATICAL PROOF-CODE CHANGE.**
+
+Repository release v0.1.1 adds the missing citations and explicit historical distinction recorded in Section 2a. It leaves the v0.1.0 tag/release and every frozen theorem/audit artifact unchanged. The manuscript's internal edition number remains v0.1.2 because v0.1.1 was already used by the preserved pre-publication build-QA history; its rebuilt title page identifies repository release v0.1.1 explicitly.
+
+Corrected public PDF SHA-256:
+`af355a052b3a7377ff668291b59b1dc1b2ca4619e94f9d12a3f21e38387a5c57`
+
+Corrected public source ZIP SHA-256:
+`94247815dda926ce62602bd7476a611919a652708d6df7bacda8b7dd3a452297`
+
+Privacy-filtered v0.1.1 public release bundle SHA-256:
+`9690857a845f00014da00d3af44a147407079c1043a8366d922a7d05c117d9fd`
+
+The clean-directory Tectonic/BibTeX build passed with no undefined citations or references. The 35-page PDF was rendered and visually reviewed. The only recorded layout warning is a 1.59357 pt overfull box in unchanged Appendix B material.
 
 ## Reading the status labels
 

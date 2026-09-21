@@ -35,7 +35,9 @@ def check(root):
         'provenance/KNOWN_SOURCE_ISSUES.md', 'rejected/README.md', 'rejected/SOL_O6_ARITHMETIC_FAILURE.md',
         'docs/PROJECT_HISTORY.md', 'docs/VALIDATION_STATUS.md', 'docs/REPOSITORY_ARCHITECTURE.md', 'docs/PUBLICATION_PATCH_CHECKS.json',
         'tools/verify_hashes.py', 'tools/verify_release_assets.py',
-        'release/RELEASE_NOTES_v0.1.0.md', 'release/RELEASE_ASSETS.md', 'release/SEALED_ARTIFACT_PRIVACY.md', 'release/PRIVATE_REVIEW_SHA256SUMS', 'release/SHA256SUMS']
+        'release/RELEASE_NOTES_v0.1.0.md', 'release/RELEASE_NOTES_v0.1.1.md',
+        'release/RELEASE_ASSETS.md', 'release/SEALED_ARTIFACT_PRIVACY.md',
+        'release/PRIVATE_REVIEW_SHA256SUMS', 'release/SHA256SUMS', 'release/SHA256SUMS_v0.1.1']
     for name in required:
         require((root / name).is_file(), 'Required file missing: ' + name)
     require((root / 'LICENSE').is_file() and (root / 'CITATION.cff').is_file(),
@@ -43,7 +45,7 @@ def check(root):
     pins = json.loads((root / 'provenance/artifact_index.json').read_text(encoding='utf-8'))
     preservation = json.loads((root / 'provenance/source_preservation.json').read_text(encoding='utf-8'))
     for item in preservation['files']:
-        require(sha256(root / item['repository_path']) == item['sha256'],
+        require(sha256(root / item['repository_path']) == item.get('current_sha256', item['sha256']),
                 'Pinned public source/PDF changed: ' + item['repository_path'])
     lower, upper = pins['root_certificate']['s_enclosure']
     for name in ['README.md', 'THEOREM.md', 'docs/PROJECT_HISTORY.md']:

@@ -1,6 +1,6 @@
 # i3322-exact-value
 
-Proof-carrying research candidate v0.1.0 for external human review.
+Proof-carrying research candidate, repository release v0.1.1, for external human review.
 
 **Canonical repository:** https://github.com/LeoLam233/i3322-exact-value
 
@@ -17,6 +17,10 @@ The rigorous strict rational enclosure is:
 Its exact width is `4.60932356071910243385112719549938850842E-52`. “Exact” refers to the structural unique-root characterization and certified enclosure; neither endpoint is the value and no elementary closed form is claimed. **There is no commuting=tensor equality or R2 claim.**
 
 **Validation:** O1–O5 is CLOSED-PASS. O6 and the final integrated audit are OPEN-MINOR; the theorem survives with the genuine, unpatched, non-load-bearing M001 midpoint-helper defect. Source provenance is OPEN-MINOR, with complete R1 generation ancestry unresolved. **External expert human validation and journal peer review have not yet occurred.** See [limitations](LIMITATIONS.md) and [validation status](docs/VALIDATION_STATUS.md).
+
+## v0.1.1 citation and provenance correction
+
+This release corrects an omission in the original public manuscript and repository. Seth Douglas's [v1.0.0 Zenodo record](https://doi.org/10.5281/zenodo.21782009) contained the candidate constant and matching picture before this work was published; his later paper is [arXiv:2609.05555](https://arxiv.org/abs/2609.05555). The proof claims associated with the August v1.0.0 release were subsequently withdrawn as proof claims. The present manuscript therefore does not claim priority for those earlier observations, while its claimed rigorous theorem and proof architecture remain distinct. We thank Seth Douglas for bringing the missing citation and provenance issue to our attention.
 
 ## Start here
 
@@ -45,4 +49,4 @@ The [proof graph](proof/DEPENDENCY_GRAPH.md), [external premises](proof/EXTERNAL
 
 Owner-authored code is MIT licensed; owner-authored manuscript/prose/documentation is CC BY 4.0. The [license map](LICENSE) and [third-party notices](THIRD_PARTY_NOTICES.md) explicitly exclude pre-existing frozen/sealed artifacts and third-party material from blanket grants.
 
-Sealed historical archives retain inherited workstation/build paths under the owner-approved disclosure; their validation custody hashes are preserved. A later recursive privacy sweep also found a historical personal email in immutable Git reflogs inside some frozen archives; those affected archives are therefore withheld from the public GitHub Release rather than modified. See [sealed-artifact privacy](release/SEALED_ARTIFACT_PRIVACY.md). No arXiv submission or journal peer review is claimed by v0.1.0.
+Sealed historical archives retain inherited workstation/build paths under the owner-approved disclosure; their validation custody hashes are preserved. A later recursive privacy sweep also found a historical personal email in immutable Git reflogs inside some frozen archives; those affected archives are therefore withheld from the public GitHub Release rather than modified. See [sealed-artifact privacy](release/SEALED_ARTIFACT_PRIVACY.md). No arXiv submission or journal peer review is claimed by v0.1.1.

@@ -1,14 +1,14 @@
-# Public manuscript v0.1.2
+# Public manuscript v0.1.2 in repository release v0.1.1
 
-[Read the PDF](paper_v0_1_2.pdf). PDF SHA-256: `81b75cd3a720ab0e2953bdbd79f70c969af5fc48ab01caa75f4522b229f51f2f`.
+[Read the PDF](paper_v0_1_2.pdf). Corrected-release PDF SHA-256: `af355a052b3a7377ff668291b59b1dc1b2ca4619e94f9d12a3f21e38387a5c57`.
 
-The original sealed replay package `I3322_PAPER_V0_1_2.zip` has SHA-256 `1aa58a1d74f1aa130024196f4f537fcab293e7d78bab073d8432077348ee9905`. It contains the complete LaTeX/BibTeX source, PDF, build/render QA, replay wrapper and byte-preserved reproducibility archive. Because that embedded frozen provenance chain contains historical personal-email metadata in Git reflogs, the sealed replay package is retained privately rather than uploaded to the public GitHub Release. The readable source tree here and `paper_v0_1_2.pdf` are the public manuscript surfaces.
+The original sealed replay package `I3322_PAPER_V0_1_2.zip` has SHA-256 `1aa58a1d74f1aa130024196f4f537fcab293e7d78bab073d8432077348ee9905`. It contains the pre-correction LaTeX/BibTeX source, PDF, build/render QA, replay wrapper and byte-preserved reproducibility archive. Because that embedded frozen provenance chain contains historical personal-email metadata in Git reflogs, the sealed replay package is retained privately rather than uploaded to the public GitHub Release. It is preserved unchanged as historical build/replay provenance. The readable source tree and rebuilt `paper_v0_1_2.pdf` are the current public manuscript surfaces.
 
-This is a metadata/declaration successor to v0.1.1: approved author/affiliation/email, PDF author/title metadata, the version label, and Funding/Competing interests declarations are finalized. Acknowledgements are deferred. **MATHEMATICAL CONTENT CHANGED: NO.** All other TeX/BibTeX files are byte-identical. The mathematical portions of the two edited files and every long numerical string are unchanged. No theorem, proof argument, external-premise scope, audit caveat or validation claim changed.
+The pre-existing manuscript edition number remains v0.1.2 because v0.1.1 was already used in the preserved pre-publication manuscript/build-QA history. The title page identifies repository release v0.1.1 explicitly. This corrective release adds the missing Douglas citations and historical/priority explanation in the introduction, matching section and provenance section. **MATHEMATICAL CLAIM OR PROOF CODE CHANGED: NO.** No theorem statement, proof step, external-premise scope, audit caveat, exact numerical string or validation claim changed.
 
 Author: Dehao Lin; School of Physics, Sun Yat-sen University, Guangzhou, China; lindh9@mail2.sysu.edu.cn. No ORCID is supplied and no AI system is an author. See [authorship](../AUTHORSHIP.md) and the unchanged [AI assistance disclosure](AI_ASSISTANCE_DISCLOSURE.md).
 
-The new offline build exited 0 using pdfTeX 1.40.25 (TeX Live 2023/Debian), BibTeX and two final LaTeX passes. It has 33 pages, zero undefined references/citations, zero fatal LaTeX errors and no substantial overfull boxes. One 0.23207 pt overfull hbox is recorded; all 33 pages were visually reviewed without clipping or overlap. Exact long numerical strings were checked in both source and PDF.
+The corrective offline build exited 0 using Tectonic 0.17.0 (XeTeX), BibTeX and two automatic reruns. It has 35 pages, zero undefined references/citations, zero fatal LaTeX errors and one 1.59357 pt overfull hbox in unchanged Appendix B material. All 35 pages were rendered and visually reviewed without clipping, overlap or unreadable glyphs. The exact long numerical strings remain unchanged.
 
 ## Build from the readable source tree
 
