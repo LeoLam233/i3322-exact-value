@@ -6,8 +6,8 @@ This is an assembly summary of asset 03, SHA-256 `b517f69ecfd22084ffcc51251be928
 
 The completed audit records zero fatal and zero major findings, four minor and four documentation findings. Six source-text errors are explicitly recorded; zero are load-bearing under its frozen disposition. No theorem repair or rejected-branch mathematics was used.
 
-Its minimal remaining external theorem premises are Coladangelo v1 Theorem 7.1, the finite-projective clause of Theorem 7.2, Proposition 10.9, and the standard finite-dimensional real-analytic stable/unstable manifold theorem. Pauwels and Pál–Vértesi are comparison/historical sources. The zero-Douglas claim excludes every Douglas/Apsiape theorem, data item, code path, root, witness and PASS result from mathematical authority.
+Its minimal remaining external theorem premises are Coladangelo v1 Theorem 7.1, the finite-projective clause of Theorem 7.2, Proposition 10.9, and the standard finite-dimensional real-analytic stable/unstable manifold theorem. Pauwels and Pál–Vértesi are comparison/historical sources. The Douglas sources are historical and methodological provenance rather than mathematical premises of the proof.
 
 R1 released data identity is authenticated and validity independently exact-certified. Complete pre-release numerical-generation ancestry remains unresolved, a non-load-bearing discovery-history limit. The audit freshly replayed R0/R1/final integration but did not rerun the full O6 observer. M001 is carried unchanged.
 
-“External human validation ready” means suitable for expert examination. It does not mean independently human-validated or journal peer-reviewed. See [source reliability](../provenance/SOURCE_RELIABILITY.md), [known issues](../provenance/KNOWN_SOURCE_ISSUES.md) and [limitations](../LIMITATIONS.md).
+“External human validation ready” means suitable for expert examination. It does not mean that complete external human validation or journal peer review has occurred. See [source reliability](../provenance/SOURCE_RELIABILITY.md), [known issues](../provenance/KNOWN_SOURCE_ISSUES.md) and [limitations](../LIMITATIONS.md).

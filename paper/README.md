@@ -1,10 +1,10 @@
 # Public manuscript v0.1.2 in repository release v0.1.1
 
-[Read the PDF](paper_v0_1_2.pdf). Corrected-release PDF SHA-256: `af355a052b3a7377ff668291b59b1dc1b2ca4619e94f9d12a3f21e38387a5c57`.
+[Read the PDF](paper_v0_1_2.pdf). Corrected-release PDF SHA-256: `8c96ffe8925e2c037ee6837de7e83f1b9bb0e8ff4714ff785a99eb594a2f3f8b`.
 
 The original sealed replay package `I3322_PAPER_V0_1_2.zip` has SHA-256 `1aa58a1d74f1aa130024196f4f537fcab293e7d78bab073d8432077348ee9905`. It contains the pre-correction LaTeX/BibTeX source, PDF, build/render QA, replay wrapper and byte-preserved reproducibility archive. Because that embedded frozen provenance chain contains historical personal-email metadata in Git reflogs, the sealed replay package is retained privately rather than uploaded to the public GitHub Release. It is preserved unchanged as historical build/replay provenance. The readable source tree and rebuilt `paper_v0_1_2.pdf` are the current public manuscript surfaces.
 
-The pre-existing manuscript edition number remains v0.1.2 because v0.1.1 was already used in the preserved pre-publication manuscript/build-QA history. The title page identifies repository release v0.1.1 explicitly. This corrective release adds the missing Douglas citations and historical/priority explanation in the introduction, matching section and provenance section. **MATHEMATICAL CLAIM OR PROOF CODE CHANGED: NO.** No theorem statement, proof step, external-premise scope, audit caveat, exact numerical string or validation claim changed.
+The pre-existing manuscript edition number remains v0.1.2 because v0.1.1 was already used in the preserved pre-publication manuscript/build-QA history. The title page identifies repository release v0.1.1 explicitly. This corrective release adds the missing Douglas citations and historical/priority explanation in the introduction, matching section and provenance section, followed by a final editorial cleanup of that language. **MATHEMATICAL CLAIM OR PROOF CODE CHANGED: NO.** No theorem statement, proof step, external-premise scope, audit verdict or exact numerical string changed. Validation wording now distinguishes partial external checking from complete validation of the full theorem.
 
 Author: Dehao Lin; School of Physics, Sun Yat-sen University, Guangzhou, China; lindh9@mail2.sysu.edu.cn. No ORCID is supplied and no AI system is an author. See [authorship](../AUTHORSHIP.md) and the unchanged [AI assistance disclosure](AI_ASSISTANCE_DISCLOSURE.md).
 

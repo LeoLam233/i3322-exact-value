@@ -9,7 +9,7 @@ The frozen project source-provenance audit distinguishes internal reproof, indep
 | Mghirbi rational lower/upper objects | External origin, independently exact-certified validity (state B) | Released identity authenticated; full pre-release generation ancestry unresolved |
 | Internal R0/R1 reproofs and finite implications | Internal mathematical authority (state A where classified) | Do not replace prose proof obligations with a metadata PASS |
 | Pauwels; Pál–Vértesi | Comparison and history | Not load-bearing final theorem premises |
-| Douglas/Apsiape and earlier downstream closures | Historical method discovery | No theorem, data, code, root, witness or PASS authority |
+| Douglas sources and earlier downstream closures | Historical method discovery | Historical and methodological provenance, not mathematical premises of the final proof chain |
 | Rejected Sol O6 attempt | Rejected evidence | A replay PASS coexists with a fatal arithmetic audit finding |
 | Python, symbolic/interval code, OS and hardware | Explicit implementation trust | No whole-proof formal verification claim |
 

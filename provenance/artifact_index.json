@@ -177,17 +177,17 @@
   "public_release_assets_v0_1_1": [
     {
       "filename": "I3322_GITHUB_V0_1_1_PUBLIC_RELEASE_ASSETS.zip",
-      "sha256": "9690857a845f00014da00d3af44a147407079c1043a8366d922a7d05c117d9fd",
+      "sha256": "df554b890ef7b5c18a56255bf36996b01ec3aa4187f72b6ab17c1659b0e9d8d0",
       "role": "Privacy-filtered v0.1.1 corrective release bundle"
     },
     {
       "filename": "I3322_PAPER_V0_1_2_PUBLIC_SOURCE.zip",
-      "sha256": "94247815dda926ce62602bd7476a611919a652708d6df7bacda8b7dd3a452297",
+      "sha256": "4a872a1c8a858d3564078d289df08dba3f546965a3b86282b050427d966b9e5c",
       "role": "Corrected public manuscript/source package; not frozen replay authority"
     },
     {
       "filename": "paper_v0_1_2.pdf",
-      "sha256": "af355a052b3a7377ff668291b59b1dc1b2ca4619e94f9d12a3f21e38387a5c57",
+      "sha256": "8c96ffe8925e2c037ee6837de7e83f1b9bb0e8ff4714ff785a99eb594a2f3f8b",
       "role": "Corrected public manuscript PDF"
     }
   ]

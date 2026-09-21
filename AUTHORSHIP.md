@@ -10,6 +10,6 @@ Funding: The author received no specific funding for this work.
 
 Competing interests: The author declares no competing interests.
 
-Acknowledgements are deferred until external human review. External expert human validation and journal peer review are PENDING.
+Formal acknowledgements are deferred to a later manuscript revision. Complete external expert human validation and journal peer review are PENDING.
 
 Canonical repository: **https://github.com/LeoLam233/i3322-exact-value**

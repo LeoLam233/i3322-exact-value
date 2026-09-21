@@ -28,7 +28,7 @@ Two downstream AI trajectories, including an Astra branch and a Sol-family branc
 
 Seth Douglas's public v1.0.0 archive, *A rigorously characterized I3322 quantum wall and finite-dimensional nonattainment* ([Zenodo DOI 10.5281/zenodo.21782009](https://doi.org/10.5281/zenodo.21782009), published 4 August 2026), contained the candidate constant and matching picture before this repository's public release. The proof claims associated with that August release were subsequently withdrawn as proof claims in the public correction history; the numerical candidate was not thereby disproved. Douglas's later related paper is [arXiv:2609.05555](https://arxiv.org/abs/2609.05555).
 
-The final `i3322-exact-value` chain does not use a Douglas/Apsiape theorem, certificate, root, witness or PASS result as mathematical authority. That independence does not erase discovery history: an untrusted historical method blueprint informed later question formulation, and the earlier public candidate and matching picture are credited explicitly. The present theorem's rigorous proof architecture and scope are distinct from the withdrawn proof attempt.
+The final `i3322-exact-value` chain does not use the Douglas sources as mathematical premises. That independence does not erase discovery history: the earlier matching picture informed later question formulation, and the earlier public candidate and matching picture are credited explicitly. The present theorem's rigorous proof architecture and scope are distinct from the withdrawn proof attempt.
 
 
 ### 3. Dependency cartography and clean replacement reconstruction
@@ -73,7 +73,7 @@ Interpretation: O6 was localized as the genuine remaining discovery bottleneck. 
 
 **Status: HISTORICAL (method blueprint; no inherited proof authority).**
 
-The workflow then changed from blind rediscovery to clean recertification. Historical O6 material was mechanically reduced to an UNTRUSTED METHOD BLUEPRINT: method architecture could be seen, but historical numerical covers, roots, PASS flags, implementation, and certificates could not be inherited as evidence.
+The workflow then changed from blind rediscovery to clean recertification. Historical O6 material was treated as a method blueprint without inherited proof status: method architecture could be seen, but historical numerical covers, roots, PASS flags, implementation, and certificates could not be inherited as evidence.
 
 Two cross-generated clean recertifications were produced from separately extracted versions of the same historical O6 method architecture.
 
@@ -152,7 +152,7 @@ Final integrated hostile-audit SHA-256:
 
 **Status: OPEN-MINOR / SURVIVES.**
 
-A final source-provenance audit identified the minimal remaining external theorem premises as Coladangelo v1 Theorem 7.1, the finite-projective clause of Theorem 7.2, Proposition 10.9, and the standard finite-dimensional real-analytic stable/unstable manifold theorem. Pauwels and Pál-Vértesi are comparison/historical sources rather than load-bearing premises. No Douglas/Apsiape theorem, data, code, root, witness or PASS result is used as mathematical authority.
+A final source-provenance audit identified the minimal remaining external theorem premises as Coladangelo v1 Theorem 7.1, the finite-projective clause of Theorem 7.2, Proposition 10.9, and the standard finite-dimensional real-analytic stable/unstable manifold theorem. Pauwels and Pál-Vértesi are comparison/historical sources rather than load-bearing premises. The Douglas sources are historical and methodological provenance rather than mathematical premises of the proof.
 
 The audit recorded source-text errors and provenance caveats but no load-bearing source error. R1 released data identity and validity passed; complete historical candidate-generation ancestry remains unresolved.
 
@@ -174,7 +174,7 @@ Historical v0.1.1 PDF SHA-256:
 
 
 
-The public manuscript is now **v0.1.2**, a metadata/declaration successor to the mathematically unchanged v0.1.1 manuscript. The approved author/affiliation/email, version label, Funding and Competing interests are finalized; acknowledgements are deferred. The fresh build and all-page render review passed at 33 pages. Mathematical content, exact numerical strings, theorem authority and validation caveats are unchanged. External human validation and journal peer review remain pending.
+The public manuscript is now **v0.1.2**, a metadata/declaration successor to the mathematically unchanged v0.1.1 manuscript. The approved author/affiliation/email, version label, Funding and Competing interests are finalized; formal acknowledgements are deferred to a later manuscript revision. The fresh build and all-page render review passed at 33 pages. Mathematical content, exact numerical strings, theorem authority and validation caveats are unchanged. Complete external human validation and journal peer review remain pending.
 
 Sealed v0.1.2 replay-paper package SHA-256 (private reviewer asset):
 `1aa58a1d74f1aa130024196f4f537fcab293e7d78bab073d8432077348ee9905`
@@ -197,16 +197,22 @@ This changes public transport/hosting only. The theorem, paper mathematics, cano
 
 Repository release v0.1.1 adds the missing citations and explicit historical distinction recorded in Section 2a. It leaves the v0.1.0 tag/release and every frozen theorem/audit artifact unchanged. The manuscript's internal edition number remains v0.1.2 because v0.1.1 was already used by the preserved pre-publication build-QA history; its rebuilt title page identifies repository release v0.1.1 explicitly.
 
-Corrected public PDF SHA-256:
-`af355a052b3a7377ff668291b59b1dc1b2ca4619e94f9d12a3f21e38387a5c57`
+Corrected public PDF SHA-256 after final prerelease editorial cleanup:
+`8c96ffe8925e2c037ee6837de7e83f1b9bb0e8ff4714ff785a99eb594a2f3f8b`
 
 Corrected public source ZIP SHA-256:
-`94247815dda926ce62602bd7476a611919a652708d6df7bacda8b7dd3a452297`
+`4a872a1c8a858d3564078d289df08dba3f546965a3b86282b050427d966b9e5c`
 
 Privacy-filtered v0.1.1 public release bundle SHA-256:
-`9690857a845f00014da00d3af44a147407079c1043a8366d922a7d05c117d9fd`
+`df554b890ef7b5c18a56255bf36996b01ec3aa4187f72b6ab17c1659b0e9d8d0`
 
 The clean-directory Tectonic/BibTeX build passed with no undefined citations or references. The 35-page PDF was rendered and visually reviewed. The only recorded layout warning is a 1.59357 pt overfull box in unchanged Appendix B material.
+
+### 17. v0.1.1 prerelease editorial finalization
+
+**Status: EDITORIAL-ONLY PRERELEASE FINALIZATION; NO MATHEMATICAL OR FROZEN-ARTIFACT CHANGE.**
+
+Before this final editorial pass, the public `v0.1.1` prerelease tag pointed to commit `b5cc876a7f2bd596309b27c15a07d2f381173c19` through annotated tag object `6404ae38fee9fea9a5cda56aa0703a99118eb357`. The prerelease tag was explicitly retargeted after the Douglas wording and external-validation wording were made more precise, the manuscript was rebuilt, and all public release assets and manifests were regenerated. The sealed theorem/audit artifacts and the `v0.1.0` tag/release were not modified.
 
 ## Reading the status labels
 

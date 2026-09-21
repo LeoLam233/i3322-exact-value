@@ -38,8 +38,8 @@ human-approved repository tree and public release assets.
 
 **AI agreement is not independent mathematical evidence.** Model-generated
 arguments remain subject to mathematical scrutiny, and shared premises can
-produce shared errors. External expert human validation and journal peer review
-remain pending, as recorded in the [validation status](docs/VALIDATION_STATUS.md).
+produce shared errors. Complete external expert human validation and journal
+peer review remain pending, as recorded in the [validation status](docs/VALIDATION_STATUS.md).
 This documentation contribution supplies no new proof or audit verdict.
 
 This contributor attribution records substantial computational/research

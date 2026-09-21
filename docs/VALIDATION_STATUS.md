@@ -15,11 +15,11 @@
 | R1 complete pre-release generation ancestry | Unresolved | Discovery history limit, not a missing mathematical premise |
 | Rejected Sol O6 attempt | REJECTED — NOT THEOREM AUTHORITY | Replay PASS did not survive arithmetic audit |
 | Manuscript v0.1.2 / repository release v0.1.1 build/render | Fresh QA PASS | Corrected 35-page build; all pages rendered/reviewed; citations/provenance updated, mathematical claims and proof code unchanged |
-| External expert human validation | PENDING | Ready for examination is not already validated |
+| Complete external expert human validation | PENDING | Partial checking is not complete validation of the full theorem |
 | Journal peer review | PENDING | Research candidate, not peer-reviewed publication |
 | License and author metadata | FINALIZED | Approved Dehao Lin metadata; MIT code, CC BY 4.0 prose; explicit third-party/frozen exclusions; final CITATION.cff |
 | Public release transport | PRIVACY-FILTERED | Public repo/PDF and safe audits are hosted; canonical theorem/replay seals retain published hashes but are private-reviewer assets because of embedded historical personal-email metadata |
 
 The final closure and integrated audit predate the separate source-provenance review; their original “pending” field is preserved in sealed history. The completed later source audit is OPEN-MINOR, not a retrospective rewrite of those records. Likewise, earlier O1–O5 OPEN-MINOR for D001 is distinguished from its final CLOSED-PASS after the supplement.
 
-The earlier repository assembly replay passed integration, mutations, R0, R1, O1–O5 and O6. Current finalization execution is recorded separately in [FINALIZATION_CHECKS.json](FINALIZATION_CHECKS.json). This execution does not upgrade the frozen verdicts or count as external human review. See [historical assembly evidence](ASSEMBLY_CHECKS.json), [audit guide](../AUDIT_ME_FIRST.md) and [limitations](../LIMITATIONS.md).
+The earlier repository assembly replay passed integration, mutations, R0, R1, O1–O5 and O6. Current finalization execution is recorded separately in [FINALIZATION_CHECKS.json](FINALIZATION_CHECKS.json). This execution does not upgrade the frozen verdicts or count as complete external human review. See [historical assembly evidence](ASSEMBLY_CHECKS.json), [audit guide](../AUDIT_ME_FIRST.md) and [limitations](../LIMITATIONS.md).

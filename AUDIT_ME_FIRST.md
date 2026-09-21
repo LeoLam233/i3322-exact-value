@@ -1,6 +1,6 @@
 # Audit this result first
 
-Start from a skeptical reading of the source interfaces and finite checks. **The theorem's scope is the finite-dimensional/projective tensor supremum. External expert human validation and journal peer review are pending.** O6/final integrated/source-provenance verdicts remain OPEN-MINOR; the theorem survives within those records' scope.
+Start from a skeptical reading of the source interfaces and finite checks. **The theorem's scope is the finite-dimensional/projective tensor supremum. Complete external expert human validation and journal peer review are pending.** O6/final integrated/source-provenance verdicts remain OPEN-MINOR; the theorem survives within those records' scope.
 
 ## A 30-minute audit path
 

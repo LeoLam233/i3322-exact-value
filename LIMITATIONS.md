@@ -6,7 +6,7 @@ The final theorem is limited to the **finite-dimensional/projective tensor-produ
 - **No finite-dimensional attainment claim.** A supremum and an infinite stationary carrier do not assert a finite-dimensional optimizer.
 - **No optimizer uniqueness or carrier uniqueness claim.** O6 proves uniqueness of a parameter projection.
 - **No elementary closed-form claim.** The characterization is structural and analytic, with a rigorous rational enclosure.
-- **External expert human validation is pending.**
+- **Complete external expert human validation is pending.**
 - **Journal peer review is pending.**
 - **M001 is genuine, unpatched and non-load-bearing on the submitted path.** The surviving O6 generic midpoint helper can return a point outside a sufficiently narrow synthetic interval. This is not erased by actual-path checks or a replay PASS.
 - **Source provenance is OPEN-MINOR.** Its review survives with stated minor/documentation findings; it is not CLOSED-PASS.

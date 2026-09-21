@@ -16,7 +16,7 @@ The rigorous strict rational enclosure is:
 
 Its exact width is `4.60932356071910243385112719549938850842E-52`. “Exact” refers to the structural unique-root characterization and certified enclosure; neither endpoint is the value and no elementary closed form is claimed. **There is no commuting=tensor equality or R2 claim.**
 
-**Validation:** O1–O5 is CLOSED-PASS. O6 and the final integrated audit are OPEN-MINOR; the theorem survives with the genuine, unpatched, non-load-bearing M001 midpoint-helper defect. Source provenance is OPEN-MINOR, with complete R1 generation ancestry unresolved. **External expert human validation and journal peer review have not yet occurred.** See [limitations](LIMITATIONS.md) and [validation status](docs/VALIDATION_STATUS.md).
+**Validation:** O1–O5 is CLOSED-PASS. O6 and the final integrated audit are OPEN-MINOR; the theorem survives with the genuine, unpatched, non-load-bearing M001 midpoint-helper defect. Source provenance is OPEN-MINOR, with complete R1 generation ancestry unresolved. **Complete external expert human validation of the theorem has not yet occurred, and journal peer review has not yet occurred.** See [limitations](LIMITATIONS.md) and [validation status](docs/VALIDATION_STATUS.md).
 
 ## v0.1.1 citation and provenance correction
 
@@ -45,7 +45,7 @@ For a Git checkout, add `--ignore-git` to the first command. A clone contains th
 
 The [proof graph](proof/DEPENDENCY_GRAPH.md), [external premises](proof/EXTERNAL_PREMISES.md), and [machine/analytic boundary](proof/MACHINE_ANALYTIC_BOUNDARY.md) explain what replay establishes. Hashes authenticate bytes; they do not establish mathematical truth. Agreement among AI runs sharing external premises is not independent evidence.
 
-**Author:** Dehao Lin; School of Physics, Sun Yat-sen University, Guangzhou, China; lindh9@mail2.sysu.edu.cn. [Authorship and declarations](AUTHORSHIP.md) are finalized; Funding and Competing interests appear in manuscript v0.1.2. Acknowledgements are deferred. No AI system is an author.
+**Author:** Dehao Lin; School of Physics, Sun Yat-sen University, Guangzhou, China; lindh9@mail2.sysu.edu.cn. [Authorship and declarations](AUTHORSHIP.md) are finalized; Funding and Competing interests appear in manuscript v0.1.2. Formal acknowledgements are deferred to a later manuscript revision. No AI system is an author.
 
 Owner-authored code is MIT licensed; owner-authored manuscript/prose/documentation is CC BY 4.0. The [license map](LICENSE) and [third-party notices](THIRD_PARTY_NOTICES.md) explicitly exclude pre-existing frozen/sealed artifacts and third-party material from blanket grants.
 

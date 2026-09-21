@@ -13,7 +13,7 @@ The first three interfaces belong to one source, not three independent proof sou
 
 O1–O5 internally checks analyticity, local invertibility, fixed points and hyperbolic spectral gaps. Neighborhood independence follows by eventual entry and valid finite continuation; no global one-chart capture or equal independent phases is imported. The manuscript bibliography preserves the standard-theorem references, including Cabré–Fontich–de la Llave and Shub; the frozen audit distinguishes its inspected primary article from the uninspected full textbook.
 
-Pauwels and Pál–Vértesi are comparison/historical sources, not final theorem premises. R1's two rational candidate objects have external data origin, but their mathematical validity is independently exact-certified. Complete numerical discovery ancestry is not a theorem premise. No Douglas/Apsiape theorem, data, code, root, witness or PASS result is mathematical authority in the final chain.
+Pauwels and Pál–Vértesi are comparison/historical sources, not final theorem premises. R1's two rational candidate objects have external data origin, but their mathematical validity is independently exact-certified. Complete numerical discovery ancestry is not a theorem premise. The Douglas sources are cited for historical and methodological provenance rather than as mathematical premises of the final chain.
 
 Ordinary spectral theory, positivity/congruence, two-projection decomposition, compactness, concavity, contraction and inverse-function principles remain part of the mathematical foundations. Python, arithmetic libraries, operating system and hardware are a separate software trust boundary. There is no proof-assistant formalization of the entire exact-value theorem.
 
